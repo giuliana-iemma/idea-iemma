@@ -1,0 +1,20 @@
+{
+  "name": "proyecto-sass",
+  "version": "1.0.0",
+  "description": "se le aplica scss al proyecto",
+  "main": "index.html",
+  "scripts": {
+    "build-css":"node-sass --include-path scss styles/scss/styles.scss styles/css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "scss",
+    "proyecto"
+  ],
+  "author": "giuliana iemma",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

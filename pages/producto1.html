@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto 1</title>
+    <link rel="stylesheet" href="./../styles/styles.css">
+
+</head>
+
+<header>
+    <!-- Encabezado desktop -->
+
+    <div class="header1">     
+    
+        <form class="busqueda" action="">
+            <input type="search" name="" id="buscar" value="Buscar">
+        </form>
+        
+        <div class="logo">
+            <img  src="./../assets/logo/logo blanco.png" alt="logo">
+        </div>
+
+        <div class="cuenta">
+            
+                <a href="#">Iniciar sesión</a>
+                <a href="#">Crear cuenta</a>
+                <a class="cart" href=""><img src="./../assets/icons/carritoblanco.png" alt="Carrito" ></a>
+        </div>
+
+    </div>
+
+<!-- Encabezado mobile -->
+
+<div class="header2">
+    <div class="menu_bar"> 
+        <a class="btn-menu" href="#"> <span class="icon-burger"><img src="./../assets/icons/burger.png" alt=""></span> </a>
+    </div>
+
+    <div class="logo">
+        <img  src="./../assets/logo/logo blanco.png" alt="logo">
+    </div>
+
+    <a class="cart" href=""><img src="./../assets/icons/carritoblanco.png" alt="Carrito" ></a>
+
+</div>        
+
+ <!-- Menú de navegación -->
+ <nav>
+        
+    <form class="busqueda mobile" action="">
+        <input type="search" name="" id="buscar" value="Buscar">
+    </form>
+
+    <div class="cuenta mobile">
+        
+        <a href="#">Iniciar sesión</a>
+        <a href="#">Crear cuenta</a>
+     </div>
+
+    <ul class="menu">
+        <li class="menu_item"><a href="./../index.html">Inicio</a></li>
+        <li class="menu_item active"><a href="./../pages/ropa de danza.html"> </span> Productos</a></li>
+        <li class="menu_item"><a href="./../pages/talle.html">  Talles</a></li>
+        <li class="menu_item"><a href="./../pages/contacto.html">  Contacto</a></li>
+    </ul>
+</nav>
+</header>
+
+<body>
+
+
+    <div class="story">
+        <a href="./../index.html"> Inicio / </a> Ropa de danza /
+        <strong> Producto 1 </strong>
+    </div>
+
+<section class="producto_grid">
+    
+    <div class="img-grande">
+       <a href="#"> <img src="./../assets/imagenes/1.jpg" alt="Foto producto"></a>
+    </div>
+
+    <div class="miniaturas">
+        <div class="miniatura1-img"> <img src="./../assets/imagenes/1.jpg" alt="Foto producto"> </div>
+     
+          <div lass="miniatura1-img"> <img src="./../assets/imagenes/1.jpg" alt="Foto producto"> </div>
+    </div>
+
+    <div class="datos-compra">
+
+        <div class="titulo">
+            <h2>Producto 1</h2>
+            <h4>$1700</h4>
+        </div>
+    
+        <div class="cuotas">
+            <div class="cuotas1">
+                <img src="./../assets/icons/cards.png" alt="">
+                <p>12 cuotas de $200 </p>
+            </div>
+            <a href="">Ver medios de pago</a>
+        </div>
+    
+        <div class="talle">
+            <fieldset class="talle">
+                <h4> Talle</h4>
+                            <a href="">Ver tabla de talles</a> 
+
+            <div class="opciones-talle">
+                <input type="button" value="Talle 1">
+                <input type="button" value="Talle 2">
+                <input type="button" value="Talle 3">
+                <input type="button" value="Talle 4">
+            </div>
+
+            <div class="opciones-talle mobile">
+                <input type="button" value="1">
+                <input type="button" value="2">
+                <input type="button" value="3">
+                <input type="button" value="4">
+            </div>
+            </fieldset>
+        </div>
+    
+        <div>
+            <fieldset>
+                <h4>Color</h4>
+                <div class="opciones-color">
+                    <input type="button" value="Negro">
+                    <input type="button" value="Verde">
+                    <input type="button" value="Terracota">
+                </div>
+
+                <div class="opciones-color mobile">
+                    <input class="negro" type="button" value=" ">
+                    <input class="terracota" type="button" value=" ">
+                    <input class="verde" type="button" value=" ">
+                </div>
+            </fieldset>
+        </div>
+    
+        <div class="cantidad">
+            <div class="cantidad-numero">
+            <h4>Cantidad</h4>
+                <input type="number">
+            </div>
+
+            <div class="cantidad2">
+            <form  action="enviar">
+                <input class="cantidad-comprar" type="button" name="comprar" value="Agregar al carrito">
+            </form>
+        </div>
+        
+        
+    </div>
+   
+
+
+</section>
+<!-- Productos relacionados -->
+
+<!-- <div class="productos-relacionados">
+  <h3>Productos relacionados</h3>
+
+    
+    <div class="productos-relacionados-cards">
+        <div class="minicard">
+            <a href="#"><img  src="./../assets/imagenes/2.jpg" alt="Producto"> 
+            <h4>Producto 2 </h4>
+            <p>$1700</p> </a>
+        </div>
+        
+        <div class="minicard">
+           <a href="#"> <img src="./../assets/imagenes/3.jpg" alt="Producto">
+        
+            <h4>Producto 3 </h4>
+            <p>$1500</p> </a> 
+        </div>
+    </div>
+</div> -->
+  
+</body>
+
+
+<!-- Footer -->
+<footer class="footer_grid" >
+
+    <div class="informacion"> 
+       <h3>Información </h3>
+       
+       <ul>
+           <li><a  class="informacion-enlace" href="./pages/contacto.html">Contacto</a></li>
+           <li><a  class="informacion-enlace" href="#">Cómo comprar?</a></li>
+           <li><a  class="informacion-enlace" href="#">Envíos</a></li>
+           <li><a class="informacion-enlace"  href="#">Medios de pago</a></li>
+           <li><a  class="informacion-enlace" href="#">Cambios y devoluciones</a></li>
+       </ul>
+   </div>
+
+   <div class="seguinos">
+           
+       <h3> Seguinos </h3> 
+
+       <div class="redes">
+           <a href="#"><img src="./../assets/icons/instagram.jpg" alt=""></a>
+           <a href="#"><img src="./../assets/icons/facebook.png" alt=""></a>
+           <a href="#"> <img  src="./../assets/icons/spotify.png" alt=""></a>
+          
+       </div>
+   </div>
+
+   <div class="newsletter">
+   
+       <h3>Querés enterarte de las últimas novedades?</h3> 
+           <p>Sumate a nuestro Newsletter</p>
+
+           <form action="">
+               <input class="nws-email" type="email" value="ejemplo@gmail.com">
+               <input class="nws-button" type="button" value="Suscribirse"> 
+           </form>
+
+   </div>
+</div> <!-- Como hago para que me quede del lado right? -->
+</footer>
+        
+</body>
+</html>
