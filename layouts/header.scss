@@ -40,7 +40,7 @@ header {
             border: 0;
             position: relative;
             padding: 0 20px;
-            font-size: map-get($font-title, desktop);
+            font-size: 18px;
             background-color: #00000000;
             outline: none;
             border-radius: 30px;
@@ -76,7 +76,7 @@ header {
         a  {
             width: 28%;
             display: flex;
-            font-size: map-get($font-par, desktop);
+            font-size: 16px;
             padding-inline: 10px;
             align-items: center;
             @include enlace;

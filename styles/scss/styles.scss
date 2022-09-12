@@ -250,7 +250,7 @@ $breakpoint-tablet: 780px;
                         flex-direction: column;
                         width: $complete;
                         height: 200px;
-                        font-size: map-get($font-title, mobile);
+                        font-size: 12px;
 
                         img{
                             width: $complete - 70%;
@@ -258,7 +258,7 @@ $breakpoint-tablet: 780px;
 
                         a {
                            @include enlace;
-                            font-size: map-get($font-title, mobile );
+                            font-size: 12px;
 
                             &:focus {
                                @include enlace-hover;
@@ -294,11 +294,11 @@ $breakpoint-tablet: 780px;
                 }
 
                 h3{
-                    font-size: map-get($font-title, mobile)
+                    font-size: 12px;
                 }
 
                 p{
-                    font-size: map-get ($font-par, mobile);
+                    font-size: 10px;
                 }
             }
         }
@@ -312,7 +312,7 @@ $breakpoint-tablet: 780px;
 
 .story{
     margin: 20px;
-    font-size: map-get($font-title,desktop );
+    font-size: 16px;
     color: white;
 
     a{

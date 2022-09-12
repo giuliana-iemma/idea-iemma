@@ -20,7 +20,7 @@
            h3 {
             font-weight: 800;
             margin-bottom: 15px;
-            font-size: map-get($font-title, desktop);
+            font-size: 18px;
             color:white
             }
 
@@ -32,7 +32,7 @@
 
                 .informacion-enlace{
                     @include enlace;
-                    font-size: map-get($font-par,desktop);
+                    font-size: 16px;
                     
                     &:visited {
                         @include enlace;
@@ -56,7 +56,7 @@
         h3 {
             font-weight: 800;
             margin-bottom: 15px;
-            font-size: map-get($font-title, desktop);
+            font-size: 18px;
             color:white;
             }
         }
@@ -94,7 +94,7 @@
         border-top-right-radius: 20px;
 
         p {
-            font-size: map-get($font-par, desktop );
+            font-size: 16px;
         }
 
         form{
@@ -129,15 +129,15 @@ $breakpoint-tablet: 780px;
             text-align: center;
             margin:0;
             
-            h3{font-size: map-get($font-title, mobile );}
+            h3{font-size: 12px;}
 
             ul{
                 li{ 
                     .informacion-enlace{
-                        font-size: map-get($font-par, mobile);
+                        font-size: 16px;
 
                         &:visited{
-                            font-size: map-get($font-par, mobile);
+                            font-size: 16px;
                         }
                     }
                 }
@@ -148,11 +148,11 @@ $breakpoint-tablet: 780px;
             @include flex-column-center;
             text-align: center;
             justify-content: center;
-            font-size: map-get($font-par, mobile);
+            font-size: 16px;
             margin-top: 20px;
 
             h3{
-            font-size: map-get($font-title, mobile);
+            font-size: 12px;
             }
 
             .redes{
@@ -171,7 +171,7 @@ $breakpoint-tablet: 780px;
             margin-top: 20px ;
            @include flex-column-center;
             background-color: black;
-            font-size: map-get($font-title, mobile);
+            font-size: 12px;
             border-radius: 0px;
             justify-content: center;
             text-align: center;
@@ -179,11 +179,11 @@ $breakpoint-tablet: 780px;
             width: $complete;
 
             h3{
-                font-size: map-get($font-title, mobile);
+                font-size: 12px;
             }
 
             p{
-                font-size: map-get($font-par, mobile);
+                font-size: 16px;
             }
 
             form{
@@ -192,7 +192,7 @@ $breakpoint-tablet: 780px;
 
                 .nws-email {
                     width: 200px;
-                    font-size: map-get($font-par, mobile);
+                    font-size: 16px;
                     height: 30px;
                     transition: all 1s;
 
@@ -211,7 +211,7 @@ $breakpoint-tablet: 780px;
                     width: 200px;
                     height: 30px;
                     justify-self: center;
-                    font-size: map-get($font-title, mobile);
+                    font-size: 12px;
                     transition: all 1s;
 
 

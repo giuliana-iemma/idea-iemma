@@ -26,7 +26,7 @@ nav{
 
         .menu_item {
             a{
-                font-size: map-get($font-par, desktop);
+                font-size: 16px;
                 @include enlace;
 
                 &:hover {
