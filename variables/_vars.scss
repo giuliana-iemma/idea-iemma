@@ -2,7 +2,7 @@
 $lato: 'Lato', sans-serif;
 $border-radius: 5px;
 
-/* $16px: (
+$font-p: (
     desktop: 16px,
     mobile: 10px,
 );
@@ -10,7 +10,7 @@ $border-radius: 5px;
 $font-title: (
     desktop: 18px,
     mobile: 12px,
-); */
+);
 
 @mixin flex-row-center {
     display: flex;

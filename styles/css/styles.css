@@ -4,15 +4,6 @@
   margin: 0px;
   box-sizing: border-box; }
 
-/* $16px: (
-    desktop: 16px,
-    mobile: 10px,
-);
-
-$font-title: (
-    desktop: 18px,
-    mobile: 12px,
-); */
 header {
   width: 100%;
   padding-inline: 30px;
@@ -635,7 +626,7 @@ hr {
 /* Productos */
 .story {
   margin: 20px;
-  font-size: 16px;
+  font-size: 18px;
   color: white; }
   .story a {
     text-decoration: none;
@@ -693,7 +684,7 @@ hr {
 
 @media (max-width: 380px) {
   .story {
-    font-size: 10px; }
+    font-size: 12px; }
   .container {
     display: flex;
     flex-direction: column;
