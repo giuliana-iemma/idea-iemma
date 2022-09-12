@@ -317,11 +317,13 @@ $breakpoint-tablet: 780px;
 
     a{
         @include enlace-disabled;
+
+        &:hover{
+            @include enlace-hover;
+        }
     }
 
-    &:hover{
-        @include enlace-hover;
-    }
+   
 }
 
 .container{
@@ -345,8 +347,7 @@ $breakpoint-tablet: 780px;
             height: 100%;   
 
             .datos-prod{
-                color: white;
-                text-decoration: none;
+                @include enlace;
                 position: absolute;
                 padding: 10px;
                 top:85%;
@@ -396,18 +397,14 @@ $breakpoint-tablet: 780px;
         font-size: 10px;
     }
     .container{
-        display: flex;
-        flex-direction: column;
+        @include flex-column-center;
     
     .container-img{
-        display: flex;
-        flex-direction: column;
+        @include flex-column-center;
         gap: 10px;
 
         .box-img{
-            display: flex;
-            flex-direction: column;
-            justify-items: center;
+            @include flex-column-center;
             height: 200px;
             border-radius: 10px;
 
