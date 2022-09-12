@@ -4,12 +4,6 @@
   margin: 0px;
   box-sizing: border-box; }
 
-/* Variables */
-/* Index */
-body {
-  background-image: url(./../../assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.jpg);
-  font-family: "Lato", sans-serif; }
-
 header {
   width: 100%;
   padding-inline: 30px;
@@ -21,8 +15,9 @@ header {
     display: none; }
   header .logo {
     grid-area: logo;
-    width: 30%;
+    width: 33.33333%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center; }
     header .logo img {
@@ -30,11 +25,11 @@ header {
   header .buscar {
     grid-area: search;
     display: flex;
+    flex-direction: row;
     justify-content: left;
     align-items: center;
     align-content: center;
     padding: 5px;
-    align-items: center;
     width: 30%; }
     header .buscar:hover input {
       width: 240px; }
@@ -51,8 +46,9 @@ header {
       transition: all 0.6s ease; }
     header .buscar .btn-buscar {
       display: flex;
-      align-content: center;
+      flex-direction: row;
       justify-content: center;
+      align-content: center;
       position: relative;
       top: 0;
       right: 0px;
@@ -67,30 +63,33 @@ header {
         text-align: center; }
   header .cuenta {
     grid-area: cuenta;
-    width: 30%;
+    width: 33.33333%;
     display: flex;
     flex-direction: row;
+    justify-content: right;
     align-items: center;
     /* ver c+omo centrar verticalmente */
-    justify-content: right;
     float: right; }
     header .cuenta a {
-      text-decoration: none;
       width: 28%;
       display: flex;
       font-size: 16px;
-      color: white;
       padding-inline: 10px;
       align-items: center;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
       transition: all 1s; }
       header .cuenta a:hover {
-        font-size: 15px;
+        text-decoration: none;
+        font-size: 17px;
         font-weight: 600; }
       header .cuenta a img {
         width: 24px;
         justify-self: center; }
       header .cuenta a.carrito {
         display: flex;
+        flex-direction: row;
         justify-content: right;
         width: 10%; }
       header .cuenta a .carrito {
@@ -99,23 +98,51 @@ header {
         header .cuenta a .carrito:hover {
           transform: scale(120%); }
 
+@media (max-width: 780px) {
+  header {
+    width: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: space-evenly;
+    margin: 0px;
+    position: fixed;
+    z-index: 1; }
+    header .checkbtn {
+      display: flex;
+      z-index: 1;
+      width: 30%; }
+      header .checkbtn .burger {
+        width: 50px; }
+    header .cuenta {
+      display: none; }
+    header .buscar {
+      display: none; }
+    header .logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+      width: 70%; }
+      header .logo img {
+        width: 100px; } }
+
 nav {
   display: flex;
-  align-items: center;
-  height: 40px;
+  flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  height: 40px; }
   nav .fondo-nav {
     display: none; }
   nav ul {
     width: 40%;
     height: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     list-style: none;
     background-color: rgba(0, 0, 0, 0.178);
     border-bottom: 2px solid rgba(255, 255, 255, 0.336);
     gap: 15%;
-    justify-content: center;
     align-items: center;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px; }
@@ -125,16 +152,163 @@ nav {
       font-size: 16px;
       text-decoration: none;
       color: white;
+      font-weight: 500;
       transition: all 1s; }
       nav ul .menu_item a:hover {
+        text-decoration: none;
         font-size: 17px;
         font-weight: 600; }
       nav ul .menu_item a:visited {
         text-decoration: none;
-        color: white; }
-    nav ul .menu_item.active a {
+        color: white;
+        font-weight: 500;
+        transition: all 1s; }
+      nav ul .menu_item a.active a {
+        font-weight: 800;
+        color: white(12, 10, 10); }
+
+@media (max-width: 780px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
+    height: 100vh; }
+    nav .fondo-nav {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      object-position: center;
+      margin-top: 10%;
+      overflow: hidden; }
+      nav .fondo-nav img {
+        object-fit: cover; }
+    nav #check:checked ~ ul {
+      right: 0%; }
+    nav ul {
+      background-color: black;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      align-content: top;
+      right: 110%;
+      width: 100%;
+      height: 100%;
+      transition: all .5s;
+      gap: 5%;
+      z-index: 0.5; }
+      nav ul .logo-menu {
+        display: block; }
+      nav ul li {
+        display: flex;
+        justify-content: center; }
+        nav ul li img {
+          display: flex;
+          justify-content: center; }
+        nav ul li a {
+          font-size: 20px; }
+          nav ul li a:hover, nav ul li a.active {
+            background-color: none;
+            font-weight: 700; } }
+
+.footer_grid {
+  display: grid;
+  position: relative;
+  float: bottom;
+  height: 100%;
+  background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.295));
+  grid-template-columns: repeat 2, 1fr, 3fr;
+  grid-template-areas: "informacion seguinos newsletter";
+  margin-top: 20px;
+  z-index: 0;
+  overflow: hidden;
+  padding: 30px; }
+  .footer_grid .informacion {
+    grid-area: informacion;
+    padding-top: 20px;
+    margin-left: 20px; }
+    .footer_grid .informacion h3 {
       font-weight: 800;
-      color: white(12, 10, 10); }
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: white; }
+    .footer_grid .informacion ul {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      gap: 5px;
+      list-style: none; }
+      .footer_grid .informacion ul .informacion-enlace {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        transition: all 1s;
+        font-size: 16px; }
+        .footer_grid .informacion ul .informacion-enlace:visited {
+          text-decoration: none;
+          color: white;
+          font-weight: 500;
+          transition: all 1s; }
+        .footer_grid .informacion ul .informacion-enlace:hover {
+          text-decoration: none;
+          font-size: 17px;
+          font-weight: 600; }
+  .footer_grid .seguinos {
+    grid-area: seguinos;
+    padding-top: 20px;
+    color: white; }
+    .footer_grid .seguinos h3 {
+      font-weight: 800;
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: white; }
+  .footer_grid .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 15px; }
+    .footer_grid .redes a img {
+      width: 24px;
+      transition: all 1s; }
+    .footer_grid .redes a:hover img {
+      width: 26px; }
+
+.newsletter {
+  grid-area: newsletter;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px; }
+  .newsletter p {
+    font-size: 16px; }
+  .newsletter form {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 10px; }
+    .newsletter form .nws-email {
+      width: 300px;
+      height: 30px; }
+    .newsletter form .nws-button {
+      width: 100px;
+      height: 30px; }
+
+/* Index */
+body {
+  background-image: url(./../../assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.jpg);
+  font-family: "Lato", sans-serif; }
 
 #check {
   display: none; }
@@ -266,18 +440,19 @@ hr {
 
 .info-bottom {
   display: flex;
-  width: 100%;
-  justify-content: center;
   flex-direction: row;
+  justify-content: center;
+  width: 100%;
   margin-bottom: 100px;
   gap: 200px;
   align-items: center; }
   .info-bottom div .box {
     display: flex;
     flex-direction: column;
+    align-content: center;
     align-items: center;
     gap: 8px;
-    align-content: center;
+    align-items: center;
     color: white; }
     .info-bottom div .box img {
       width: 40px; }
@@ -286,165 +461,19 @@ hr {
       flex-direction: row;
       justify-content: center; }
       .info-bottom div .box .credit-cards img {
-        width: 32px;
-        height: 32px; }
-
-.footer_grid {
-  display: grid;
-  position: relative;
-  float: bottom;
-  height: 100%;
-  background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.295));
-  grid-template-columns: repeat 2, 1fr, 3fr;
-  grid-template-areas: "informacion seguinos newsletter";
-  margin-top: 20px;
-  z-index: 0;
-  overflow: hidden;
-  padding: 30px; }
-  .footer_grid .informacion {
-    grid-area: informacion;
-    padding-top: 20px;
-    margin-left: 20px; }
-    .footer_grid .informacion h3 {
-      font-weight: 800;
-      margin-bottom: 15px;
-      font-size: 17px;
-      color: white; }
-    .footer_grid .informacion ul {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      list-style: none; }
-      .footer_grid .informacion ul .informacion-enlace {
-        text-decoration: none;
-        font-size: 15px;
-        font-weight: 700;
-        color: white; }
-        .footer_grid .informacion ul .informacion-enlace:visited {
-          text-decoration: none;
-          color: white;
-          font-size: 100px;
-          font-weight: 700; }
-        .footer_grid .informacion ul .informacion-enlace:hover {
-          font-weight: 800; }
-  .footer_grid .seguinos {
-    grid-area: seguinos;
-    padding-top: 20px;
-    color: white; }
-    .footer_grid .seguinos h3 {
-      font-weight: 800;
-      margin-bottom: 15px;
-      font-size: 17px; }
-    .footer_grid .seguinos .redes {
-      display: flex;
-      flex-direction: row;
-      gap: 15px; }
-      .footer_grid .seguinos .redes a img {
-        width: 24px; }
-      .footer_grid .seguinos .redes a:hover img {
-        width: 26px; }
-  .footer_grid .newsletter {
-    grid-area: newsletter;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    color: white;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px; }
-    .footer_grid .newsletter p {
-      font: size 17px; }
-    .footer_grid .newsletter form {
-      display: flex;
-      flex-direction: row;
-      gap: 10px; }
-      .footer_grid .newsletter form .nws-email {
-        width: 300px;
-        height: 30px; }
-      .footer_grid .newsletter form .nws-button {
-        width: 100px;
+        width: 30px;
         height: 30px; }
 
 @media (max-width: 780px) {
-  header {
-    width: 100%;
-    display: flex;
-    background-color: black;
-    justify-content: space-evenly;
-    margin: 0px;
-    position: fixed;
-    z-index: 1; }
-    header .checkbtn {
-      display: flex;
-      z-index: 1;
-      width: 30%; }
-      header .checkbtn .burger {
-        width: 50px; }
-    header .cuenta {
-      display: none; }
-    header .buscar {
-      display: none; }
-    header .logo {
-      display: flex;
-      width: 70%;
-      justify-content: right; }
-      header .logo img {
-        width: 100px; }
-  nav {
-    display: flex;
-    justify-content: left;
-    width: 100%;
-    margin-top: 0px;
-    padding-top: 0px;
-    height: 100vh; }
-    nav .fondo-nav {
-      display: flex;
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
-      object-position: center;
-      margin-top: 10%;
-      overflow: hidden; }
-      nav .fondo-nav img {
-        object-fit: cover; }
-    nav #check:checked ~ ul {
-      right: 0%; }
-    nav ul {
-      background-color: black;
-      position: fixed;
-      display: flex;
-      flex-direction: column;
-      align-content: top;
-      right: 110%;
-      width: 100%;
-      height: 100%;
-      transition: all .5s;
-      gap: 5%;
-      z-index: 0.5; }
-      nav ul .logo-menu {
-        display: block; }
-      nav ul li {
-        display: flex;
-        justify-content: center; }
-        nav ul li img {
-          display: flex;
-          justify-content: center; }
-        nav ul li a {
-          font-size: 20px; }
-          nav ul li a:hover, nav ul li a.active {
-            background-color: none;
-            font-weight: 700; }
   .home_grid {
     display: none; }
   .botones {
     display: none; }
     .botones.mobile {
       display: flex;
-      align-items: center;
       flex-direction: column;
+      align-content: center;
+      align-items: center;
       gap: 10px;
       width: 100%;
       margin-inline: 0; }
@@ -456,6 +485,7 @@ hr {
       background-size: 180%;
       background-repeat: no-repeat;
       display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center; }
       .botones .boton.mobile .boton-enlace.mobile {
@@ -463,17 +493,19 @@ hr {
         flex-direction: column;
         width: 100%;
         height: 200px;
-        font-size: 15px; }
+        font-size: 12px; }
         .botones .boton.mobile .boton-enlace.mobile img {
-          width: 70%; }
+          width: 30%; }
         .botones .boton.mobile .boton-enlace.mobile a {
           text-decoration: none;
           color: white;
-          font-size: 16px; }
+          font-weight: 500;
+          transition: all 1s;
+          font-size: 12px; }
           .botones .boton.mobile .boton-enlace.mobile a:focus {
             text-decoration: none;
-            color: white;
-            font-weight: 800; }
+            font-size: 17px;
+            font-weight: 600; }
             .botones .boton.mobile .boton-enlace.mobile a:focus img {
               width: 105%; }
   hr {
@@ -485,12 +517,14 @@ hr {
   .info-bottom {
     display: flex;
     flex-direction: column;
+    align-content: center;
+    align-items: center;
     width: 100%;
     gap: 50px; }
     .info-bottom div .box img {
       width: 32px; }
     .info-bottom div .box h3 {
-      font-size: 16px; }
+      font-size: 12px; }
     .info-bottom div .box p {
       font-size: 12px; }
   .footer_grid {

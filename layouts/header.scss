@@ -1,0 +1,150 @@
+header {
+    width: 100%;
+    padding-inline: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-block:20px;
+    gap: 20px;
+
+    .checkbtn {
+        display: none;
+    }
+
+    .logo {
+        grid-area: logo;
+        width: $complete/3;
+        @include flex-row-center;
+        align-items: center;
+        img {
+            width: $complete - 40%;
+        }
+    }
+
+    .buscar{ 
+        grid-area: search;
+        @include flex-row-left;
+        align-items: center;
+        align-content: center;
+        padding: 5px;
+        width: $complete - 70%;
+
+        &:hover {
+            input{
+            width: 240px;
+            }
+        }
+
+        input{
+            width:  0px;
+            height: 40px;
+            border: 0;
+            position: relative;
+            padding: 0 20px;
+            font-size: map-get($font-title, desktop);
+            background-color: #00000000;
+            outline: none;
+            border-radius: 30px;
+            transition: all 0.6s ease;
+        }
+
+        .btn-buscar {
+            @include flex-row-center;
+            align-content: center;
+            position: relative;
+            top: 0;
+            right: 0px;
+            line-height: 55px;   
+            border-radius: 50%;
+            text-align: center;
+            cursor: pointer;
+
+            img{
+                align-self: center;
+                @include icon-desktop;
+                text-align: center;
+               }
+           }
+    }
+
+    .cuenta {
+        grid-area: cuenta;
+        width: $complete /3;
+        @include flex-row-right;
+        align-items: center; /* ver c+omo centrar verticalmente */
+        float: right;
+
+        a  {
+            width: 28%;
+            display: flex;
+            font-size: map-get($font-par, desktop);
+            padding-inline: 10px;
+            align-items: center;
+            @include enlace;
+
+            &:hover {
+                @include enlace-hover;
+            }
+
+            img{
+                width: 24px;
+                justify-self: center;
+            }  
+
+            &.carrito{
+              @include flex-row-right;
+                width: 10%;
+            }
+
+            .carrito{
+                height: $complete;
+                transition: all 1s;
+
+                &:hover{
+                    transform: scale(120%);
+                }
+            }
+        }
+    }
+
+}
+
+$breakpoint-mobile: 380px;
+$breakpoint-tablet: 780px;
+@media (max-width: $breakpoint-tablet){
+    header {
+        width: $complete;
+        display: flex;
+        background-color: black;
+        justify-content: space-evenly;
+        margin: 0px;
+        position: fixed;
+        z-index: 1;
+
+        .checkbtn{
+            display: flex;
+            z-index: 1;
+            width: $complete - 70%;
+            .burger{
+                width: 50px;
+            }
+        }
+        .cuenta {
+            display: none;
+        }
+
+        .buscar {
+            display: none;
+        }
+
+        .logo{ 
+            @include flex-row-right;
+            width: $complete - 30%;
+            
+            
+            img {
+                width: 100px;
+            }
+        }
+    }
+
+}

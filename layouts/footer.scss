@@ -1,0 +1,227 @@
+.footer_grid {
+    display: grid;
+    position: relative;
+    float: bottom;
+    height: $complete;
+    background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.295));
+    grid-template-columns: repeat (2,1fr), 3fr;
+    grid-template-areas: 
+    "informacion seguinos newsletter";
+    margin-top: 20px;
+    z-index: 0;
+    overflow: hidden;
+    padding: 30px;
+
+    .informacion{
+        grid-area: informacion;
+        padding-top: 20px;
+        margin-left: 20px; 
+           
+           h3 {
+            font-weight: 800;
+            margin-bottom: 15px;
+            font-size: map-get($font-title, desktop);
+            color:white
+            }
+
+            ul {
+                @include flex-column-left;
+                gap: 5px;
+                list-style: none;
+                text-align: left;
+
+                .informacion-enlace{
+                    @include enlace;
+                    font-size: map-get($font-par,desktop);
+                    
+                    &:visited {
+                        @include enlace;
+                    }
+
+                    &:hover {
+                        @include enlace-hover;
+                    }
+                     
+                } 
+
+                                  
+            }
+    }
+
+    .seguinos {
+        grid-area: seguinos;
+        padding-top: 20px;
+        color:white;
+        
+        h3 {
+            font-weight: 800;
+            margin-bottom: 15px;
+            font-size: map-get($font-title, desktop);
+            color:white;
+            }
+        }
+
+        .redes {
+            @include flex-row-left;
+            gap: 15px;
+
+                a{
+                    img{
+                        width: 24px;
+                        transition: all 1s;
+                    }
+
+                    &:hover{
+                        img{
+                            width: 26px;
+                        }
+                    }
+                }
+        }
+
+    
+
+    .newsletter {
+        grid-area: newsletter;
+        width: $complete;
+        height: $complete;
+        background-repeat: no-repeat;
+        padding: 20px;
+        @include flex-column-center;
+        gap: 20px;
+        color: white;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+
+        p {
+            font-size: map-get($font-par, desktop );
+        }
+
+        form{
+            @include flex-row-left;
+            gap: 10px;
+
+            .nws-email {
+                width: 300px;
+                height: 30px;
+                } 
+
+            .nws-button {
+                width: 100px;
+                height: 30px;
+                }
+        }
+    }
+}
+
+$breakpoint-mobile: 380px;
+$breakpoint-tablet: 780px;
+@media (max-width: $breakpoint-tablet){
+    .footer_grid{
+        @include flex-column-center;
+        height: $complete;
+        width: $complete;
+        margin: 0px;
+
+
+        .informacion {
+           @include flex-column-center;
+            text-align: center;
+            margin:0;
+            
+            h3{font-size: map-get($font-title, mobile );}
+
+            ul{
+                li{ 
+                    .informacion-enlace{
+                        font-size: map-get($font-par, mobile);
+
+                        &:visited{
+                            font-size: map-get($font-par, mobile);
+                        }
+                    }
+                }
+            }
+        }
+
+        .seguinos{
+            @include flex-column-center;
+            text-align: center;
+            justify-content: center;
+            font-size: map-get($font-par, mobile);
+            margin-top: 20px;
+
+            h3{
+            font-size: map-get($font-title, mobile);
+            }
+
+            .redes{
+                @include flex-row-center;
+                gap: 10px;
+
+                a{
+                    img{
+                        width: 20px;
+                    }
+                }
+            }
+        }
+
+        .newsletter{
+            margin-top: 20px ;
+           @include flex-column-center;
+            background-color: black;
+            font-size: map-get($font-title, mobile);
+            border-radius: 0px;
+            justify-content: center;
+            text-align: center;
+            height: $complete + 20%;
+            width: $complete;
+
+            h3{
+                font-size: map-get($font-title, mobile);
+            }
+
+            p{
+                font-size: map-get($font-par, mobile);
+            }
+
+            form{
+                @include flex-column-center;
+                width: $complete - 10%;
+
+                .nws-email {
+                    width: 200px;
+                    font-size: map-get($font-par, mobile);
+                    height: 30px;
+                    transition: all 1s;
+
+                    &:focus{
+                        background-color: black;
+                        color: white;
+                        border-color: white;
+                        box-shadow: black;
+                        border-radius: 2px;
+                        outline: none;
+                    }
+                }
+
+                .nws-button{
+                    width: $complete - 70%;
+                    width: 200px;
+                    height: 30px;
+                    justify-self: center;
+                    font-size: map-get($font-title, mobile);
+                    transition: all 1s;
+
+
+                    &:focus{
+                        background-color: black;
+                        color: white;
+                    }
+                }
+            }
+        }  
+        
+    }
+}
