@@ -2,6 +2,16 @@
 $lato: 'Lato', sans-serif;
 $border-radius: 5px;
 
+$font-par: (
+    desktop: 16px,
+    mobile: 10px,
+);
+
+$font-title: (
+    desktop: 18px,
+    mobile: 12px,
+);
+
 @mixin flex-row-center {
     display: flex;
     flex-direction: row;
@@ -36,15 +46,7 @@ $border-radius: 5px;
 
 $complete: 100%;
 
-$font-par: (
-    desktop:16px,
-    mobile:10px,
-);
 
-$font-title: (
-    desktop:18px,
-    mobile:12px,
-);
 
 @mixin flex-column-center{
     display: flex;
