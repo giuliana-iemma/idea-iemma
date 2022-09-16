@@ -97,6 +97,7 @@ body{
                     align-items: center;
                     
                     &:hover{
+                        @extend a;
                         background-color: wheat;    
                         }
                 }
@@ -349,6 +350,10 @@ $breakpoint-tablet: 780px;
                 font-size: 150%;
                 background-color: rgba(0, 0, 0, 0.367);
                 width: 100%;
+                
+                strong{
+                    font-size: 16px;
+                }
             }
 
             figure{

@@ -9,7 +9,7 @@ nav{
     }
 
     ul{
-        width: $complete - 60%;
+        width: $complete - 40%;
         height: $complete;
         @include flex-row-center;
         list-style: none;

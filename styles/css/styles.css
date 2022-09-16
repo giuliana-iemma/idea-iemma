@@ -70,7 +70,7 @@ header {
     align-items: center;
     /* ver c+omo centrar verticalmente */
     float: right; }
-    header .cuenta a {
+    header .cuenta a, header .cuenta .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton header .cuenta a:hover {
       width: 28%;
       display: flex;
       font-size: 16px;
@@ -80,22 +80,22 @@ header {
       color: white;
       font-weight: 500;
       transition: all 1s; }
-      header .cuenta a:hover {
+      header .cuenta a:hover, header .cuenta .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton header .cuenta a:hover {
         text-decoration: none;
         font-weight: 600;
         color: white; }
-      header .cuenta a img {
+      header .cuenta a img, header .cuenta .home_grid .info .info_fondo .info_boton a:hover img, .home_grid .info .info_fondo .info_boton header .cuenta a:hover img {
         width: 24px;
         justify-self: center; }
-      header .cuenta a.carrito {
+      header .cuenta a.carrito, header .cuenta .home_grid .info .info_fondo .info_boton a.carrito:hover, .home_grid .info .info_fondo .info_boton header .cuenta a.carrito:hover {
         display: flex;
         flex-direction: row;
         justify-content: right;
         width: 10%; }
-      header .cuenta a .carrito {
+      header .cuenta a .carrito, header .cuenta .home_grid .info .info_fondo .info_boton a:hover .carrito, .home_grid .info .info_fondo .info_boton header .cuenta a:hover .carrito {
         height: 100%;
         transition: all 1s; }
-        header .cuenta a .carrito:hover {
+        header .cuenta a .carrito:hover, header .cuenta .home_grid .info .info_fondo .info_boton a:hover .carrito:hover, .home_grid .info .info_fondo .info_boton header .cuenta a:hover .carrito:hover {
           transform: scale(120%); }
 
 @media (max-width: 780px) {
@@ -134,7 +134,7 @@ nav {
   nav .fondo-nav {
     display: none; }
   nav ul {
-    width: 40%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -148,22 +148,22 @@ nav {
     border-top-right-radius: 5px; }
     nav ul .logo-menu {
       display: none; }
-    nav ul .menu_item a {
+    nav ul .menu_item a, nav ul .menu_item .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton nav ul .menu_item a:hover {
       font-size: 16px;
       text-decoration: none;
       color: white;
       font-weight: 500;
       transition: all 1s; }
-      nav ul .menu_item a:hover {
+      nav ul .menu_item a:hover, nav ul .menu_item .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton nav ul .menu_item a:hover {
         text-decoration: none;
         font-weight: 600;
         color: white; }
-      nav ul .menu_item a:visited {
+      nav ul .menu_item a:visited, nav ul .menu_item .home_grid .info .info_fondo .info_boton a:visited:hover, .home_grid .info .info_fondo .info_boton nav ul .menu_item a:visited:hover {
         text-decoration: none;
         color: white;
         font-weight: 500;
         transition: all 1s; }
-      nav ul .menu_item a.active a {
+      nav ul .menu_item a.active a, nav ul .menu_item .home_grid .info .info_fondo .info_boton a.active:hover a, .home_grid .info .info_fondo .info_boton nav ul .menu_item a.active:hover a, nav ul .menu_item a.active .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton nav ul .menu_item a.active a:hover {
         font-weight: 800;
         color: white(12, 10, 10); }
 
@@ -208,9 +208,9 @@ nav {
         nav ul li img {
           display: flex;
           justify-content: center; }
-        nav ul li a {
+        nav ul li a, nav ul li .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton nav ul li a:hover {
           font-size: 20px; }
-          nav ul li a:hover, nav ul li a.active {
+          nav ul li a:hover, nav ul li .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton nav ul li a:hover, nav ul li a.active, nav ul li .home_grid .info .info_fondo .info_boton a.active:hover, .home_grid .info .info_fondo .info_boton nav ul li a.active:hover {
             background-color: none;
             font-weight: 700; } }
 
@@ -272,10 +272,10 @@ nav {
     flex-direction: row;
     justify-content: left;
     gap: 15px; }
-    .footer_grid .redes a img {
+    .footer_grid .redes a img, .footer_grid .redes .home_grid .info .info_fondo .info_boton a:hover img, .home_grid .info .info_fondo .info_boton .footer_grid .redes a:hover img {
       width: 24px;
       transition: all 1s; }
-    .footer_grid .redes a:hover img {
+    .footer_grid .redes a:hover img, .footer_grid .redes .home_grid .info .info_fondo .info_boton a:hover img, .home_grid .info .info_fondo .info_boton .footer_grid .redes a:hover img {
       width: 26px; }
   .footer_grid .newsletter {
     grid-area: newsletter;
@@ -347,7 +347,7 @@ nav {
         flex-direction: row;
         justify-content: center;
         gap: 10px; }
-        .footer_grid .seguinos .redes a img {
+        .footer_grid .seguinos .redes a img, .footer_grid .seguinos .redes .home_grid .info .info_fondo .info_boton a:hover img, .home_grid .info .info_fondo .info_boton .footer_grid .seguinos .redes a:hover img {
           width: 20px; }
     .footer_grid .newsletter {
       margin-top: 20px;
@@ -462,7 +462,7 @@ body {
         justify-content: center;
         align-content: center;
         padding-top: 20px; }
-        .home_grid .info .info_fondo .info_boton a {
+        .home_grid .info .info_fondo .info_boton a, .home_grid .info .info_fondo .info_boton a:hover {
           text-decoration: none;
           color: black;
           background-color: white;
@@ -586,17 +586,17 @@ hr {
         font-size: 12px; }
         .botones .boton .boton-enlace img {
           width: 30%; }
-        .botones .boton .boton-enlace a {
+        .botones .boton .boton-enlace a, .botones .boton .boton-enlace .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton .botones .boton .boton-enlace a:hover {
           text-decoration: none;
           color: white;
           font-weight: 500;
           transition: all 1s;
           font-size: 12px; }
-          .botones .boton .boton-enlace a:focus {
+          .botones .boton .boton-enlace a:focus, .botones .boton .boton-enlace .home_grid .info .info_fondo .info_boton a:focus:hover, .home_grid .info .info_fondo .info_boton .botones .boton .boton-enlace a:focus:hover {
             text-decoration: none;
             font-weight: 600;
             color: white; }
-            .botones .boton .boton-enlace a:focus img {
+            .botones .boton .boton-enlace a:focus img, .botones .boton .boton-enlace .home_grid .info .info_fondo .info_boton a:focus:hover img, .home_grid .info .info_fondo .info_boton .botones .boton .boton-enlace a:focus:hover img {
               width: 50px; } }
 
 hr {
@@ -626,11 +626,11 @@ hr {
   margin: 20px;
   font-size: 18px;
   color: white; }
-  .story a {
+  .story a, .story .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton .story a:hover {
     text-decoration: none;
     color: grey;
     transition: 1s; }
-    .story a:hover {
+    .story a:hover, .story .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton .story a:hover {
       text-decoration: none;
       font-weight: 600;
       color: white; }
@@ -663,15 +663,17 @@ hr {
         font-size: 150%;
         background-color: rgba(0, 0, 0, 0.367);
         width: 100%; }
+        .container .container-img .box-img .datos-prod strong {
+          font-size: 16px; }
       .container .container-img .box-img figure {
         width: 100%;
         height: 100%; }
         .container .container-img .box-img figure img {
           width: 100%;
           height: 100%; }
-      .container .container-img .box-img a img {
+      .container .container-img .box-img a img, .container .container-img .box-img .home_grid .info .info_fondo .info_boton a:hover img, .home_grid .info .info_fondo .info_boton .container .container-img .box-img a:hover img {
         transition: all 2s; }
-      .container .container-img .box-img a:hover img {
+      .container .container-img .box-img a:hover img, .container .container-img .box-img .home_grid .info .info_fondo .info_boton a:hover img, .home_grid .info .info_fondo .info_boton .container .container-img .box-img a:hover img {
         transform: scale(105%);
         overflow: hidden; }
       .container .container-img .box-img:nth-child(1) {
