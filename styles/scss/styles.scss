@@ -127,9 +127,6 @@ body{
     margin-top: 20px;
     margin-inline: 20px;
 
-    &.mobile{
-        display: none;
-    }
 
     .boton {
         background-image: url(./../../assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.jpg);
@@ -157,11 +154,11 @@ body{
             
             &:hover{
                 text-decoration: none;
-                color: white;
+                color: rgba(255, 255, 255, 0);
                 font-weight: 800;
 
                 img{
-                    width: 110%;
+                    width: 80%;
                 }
             } 
                 
@@ -224,28 +221,26 @@ $breakpoint-tablet: 780px;
 
 
     .botones{
-        display: none;
 
-        &.mobile{
-       @include flex-column-center; 
-        gap: 10px;
-        width:$complete;
-        margin-inline: 0;
-        }
+      @include flex-column-center;
+      gap: 10px;
+      border-radius: 2px;
+      
 
         .boton{
-            &.mobile{
+           
                 background-image: url(./../../assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.jpg);
                 width: $complete;
                 height: 50vh;
                 border-radius: 0px;
                 background-size: $complete + 80%;
                 background-repeat: no-repeat;
+                border-radius: 5px;
                 @include flex-row-center;
                 align-items: center;
 
                 .boton-enlace{
-                    &.mobile{
+                    
                         display: flex;
                         flex-direction: column;
                         width: $complete;
@@ -264,7 +259,7 @@ $breakpoint-tablet: 780px;
                                @include enlace-hover;
 
                                 img{
-                                    width: 105%;
+                                    width:  50px;
                                 }
                             }
                         }
@@ -272,7 +267,7 @@ $breakpoint-tablet: 780px;
                 }
             }
         }
-    }
+    
 
     hr{
         margin-inline: auto;
@@ -305,7 +300,7 @@ $breakpoint-tablet: 780px;
     }
 
     
-}
+
 
 
 /* Productos */
@@ -415,7 +410,7 @@ $breakpoint-tablet: 780px;
                 }
 
                 h6{
-                    font-size: map-get($font-p, mobile);
+                    font-size: map-get($font-title, mobile);
                     font-weight: 400;
                 }
                 

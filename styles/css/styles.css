@@ -489,8 +489,6 @@ body {
   justify-content: space-between;
   margin-top: 20px;
   margin-inline: 20px; }
-  .botones.mobile {
-    display: none; }
   .botones .boton {
     background-image: url(./../../assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.jpg);
     width: 30%;
@@ -515,10 +513,10 @@ body {
       font-weight: 500; }
       .botones .boton .boton-enlace:hover {
         text-decoration: none;
-        color: white;
+        color: rgba(255, 255, 255, 0);
         font-weight: 800; }
         .botones .boton .boton-enlace:hover img {
-          width: 110%; }
+          width: 80%; }
       .botones .boton .boton-enlace img {
         width: 100%;
         transition: all 1s; }
@@ -561,67 +559,67 @@ hr {
   .home_grid {
     display: none; }
   .botones {
-    display: none; }
-    .botones.mobile {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      align-items: center;
-      justify-items: center;
-      gap: 10px;
-      width: 100%;
-      margin-inline: 0; }
-    .botones .boton.mobile {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    border-radius: 2px; }
+    .botones .boton {
       background-image: url(./../../assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.jpg);
       width: 100%;
       height: 50vh;
       border-radius: 0px;
       background-size: 180%;
       background-repeat: no-repeat;
+      border-radius: 5px;
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center; }
-      .botones .boton.mobile .boton-enlace.mobile {
+      .botones .boton .boton-enlace {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 200px;
         font-size: 12px; }
-        .botones .boton.mobile .boton-enlace.mobile img {
+        .botones .boton .boton-enlace img {
           width: 30%; }
-        .botones .boton.mobile .boton-enlace.mobile a {
+        .botones .boton .boton-enlace a {
           text-decoration: none;
           color: white;
           font-weight: 500;
           transition: all 1s;
           font-size: 12px; }
-          .botones .boton.mobile .boton-enlace.mobile a:focus {
+          .botones .boton .boton-enlace a:focus {
             text-decoration: none;
             font-weight: 600;
             color: white; }
-            .botones .boton.mobile .boton-enlace.mobile a:focus img {
-              width: 105%; }
-  hr {
-    margin-inline: auto;
-    margin-top: 25px;
-    margin-bottom: 40px;
-    height: 2px;
-    background-color: black; }
-  .info-bottom {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-items: center;
-    width: 100%;
-    gap: 50px; }
-    .info-bottom div .box img {
-      width: 32px; }
-    .info-bottom div .box h3 {
-      font-size: 12px; }
-    .info-bottom div .box p {
-      font-size: 10px; } }
+            .botones .boton .boton-enlace a:focus img {
+              width: 50px; } }
+
+hr {
+  margin-inline: auto;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  height: 2px;
+  background-color: black; }
+
+.info-bottom {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  gap: 50px; }
+  .info-bottom div .box img {
+    width: 32px; }
+  .info-bottom div .box h3 {
+    font-size: 12px; }
+  .info-bottom div .box p {
+    font-size: 10px; }
 
 /* Productos */
 .story {
@@ -711,5 +709,5 @@ hr {
           .container .container-img .box-img .datos-prod h5 {
             font-size: 12px; }
           .container .container-img .box-img .datos-prod h6 {
-            font-size: 10px;
+            font-size: 12px;
             font-weight: 400; } }
