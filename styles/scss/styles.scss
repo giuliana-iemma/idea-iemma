@@ -461,5 +461,62 @@ $breakpoint-tablet: 780px;
         }
     }
 
+}
+
+
+@media (max-width: $breakpoint-tablet){ 
+    .como-medirte{
+        @include flex-column-center;
+        .instrucciones-talle{
+            text-align: center;
+            width: 70%;
+        }
+    }
+}
+
+/* Contacto */
+.contacto{
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+        align-self: center;
+        color: white;
+
+        .entrada{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            input {
+                height: 30px;
+            }
+        }
+
+        .enviar{
+            height: 35px;
+            font-size: 14px;
+            background-color: white;
+            cursor: pointer;
+            transition: all 1s;
+
+            &:hover{
+                color: white;
+                background-color: black;
+            }
+
+            &:focus{
+                background-color: rgb(47, 47, 47);
+                color: white;
+            }
+        }
+        
+    }
 
 }
+

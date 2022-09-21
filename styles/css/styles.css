@@ -296,14 +296,16 @@ nav {
       font-size: 16px; }
     .footer_grid .newsletter form {
       display: flex;
-      flex-direction: row;
-      justify-content: left;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-items: center;
       gap: 10px; }
       .footer_grid .newsletter form .nws-email {
-        width: 300px;
+        width: 150%;
         height: 30px; }
       .footer_grid .newsletter form .nws-button {
-        width: 100px;
+        width: 150%;
         height: 30px; }
 
 @media (max-width: 780px) {
@@ -745,3 +747,45 @@ hr {
     .como-medirte .instrucciones-talle h4 {
       text-align: left;
       font-size: 24px; }
+
+@media (max-width: 780px) {
+  .como-medirte {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-items: center; }
+    .como-medirte .instrucciones-talle {
+      text-align: center;
+      width: 70%; } }
+
+/* Contacto */
+.contacto {
+  display: flex;
+  gap: 30px;
+  margin: 20px; }
+  .contacto .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    align-self: center;
+    color: white; }
+    .contacto .formulario .entrada {
+      display: flex;
+      flex-direction: column;
+      gap: 10px; }
+      .contacto .formulario .entrada input {
+        height: 30px; }
+    .contacto .formulario .enviar {
+      height: 35px;
+      font-size: 14px;
+      background-color: white;
+      cursor: pointer;
+      transition: all 1s; }
+      .contacto .formulario .enviar:hover {
+        color: white;
+        background-color: black; }
+      .contacto .formulario .enviar:focus {
+        background-color: #2f2f2f;
+        color: white; }

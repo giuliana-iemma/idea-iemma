@@ -98,16 +98,16 @@
         }
 
         form{
-            @include flex-row-left;
+            @include flex-column-center;
             gap: 10px;
 
             .nws-email {
-                width: 300px;
+                width: $complete + 50%;
                 height: 30px;
                 } 
 
             .nws-button {
-                width: 100px;
+                width: $complete + 50%;
                 height: 30px;
                 }
         }
