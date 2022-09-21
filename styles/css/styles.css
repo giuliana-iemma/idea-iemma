@@ -660,7 +660,7 @@ hr {
         transition: all 1s;
         position: absolute;
         padding: 10px;
-        top: 85%;
+        top: 75%;
         font-size: 150%;
         background-color: rgba(0, 0, 0, 0.367);
         width: 100%; }
