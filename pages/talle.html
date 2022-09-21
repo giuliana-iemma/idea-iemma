@@ -7,70 +7,55 @@
     <meta name="keywords" content="talle, tabla, ropa, deportiva">
     <meta name="description" content="No sabés cómo medir tu talle BAL? Te enseñamos cómo hacerlo para que puedas llevar la prenda ideal para vos!">
     <title>Talles - Break a Leg</title>
-    <link rel="stylesheet" href="./../styles/styles.css">
+    <link rel="stylesheet" href="./../styles/css/styles.css">
 </head>
 
-<body>
+<header>
+    <label for="check" class="checkbtn"> <img class="burger" src="./../assets/icons/burger.svg" alt=""></label>
+
+   <div  class="buscar">
+       <input type="text" placeholder="Buscar" required>
+
+       <div class="btn-buscar">
+           <img src="./../assets/icons/search.svg" alt="">      <!-- por qué no queda dentro del grid? -->   
+       </div>
+   </div>
    
-        <header>
-            <!-- Encabezado desktop -->
-        
-            <div class="header1">     
-            
-                <form class="busqueda" action="">
-                    <input type="search" name="" id="buscar" value="Buscar">
-                </form>
-                
-                <div class="logo">
-                    <img  src="./../assets/logo/logo blanco.png" alt="logo">
-                </div>
-        
-                <div class="cuenta">
-                    
-                        <a href="#">Iniciar sesión</a>
-                        <a href="#">Crear cuenta</a>
-                        <a class="cart" href=""><img class=" "width="24" height="24" src="./../assets/icons/carrito.svg" alt="Carrito" ></a>
-                </div>
-        
-            </div>
-        
-        <!-- Encabezado mobile -->
-        
-        <div class="header2">
-            <div class="menu_bar"> 
-                <a class="btn-menu" href="#"> <span class="icon-burger"><img src="./../assets/icons/burger.svg" alt=""></span> </a>
-            </div>
-        
-            <div class="logo">
-                <img  src="./../assets/logo/logo blanco.png" alt="logo">
-            </div>
-        
-            <a class="cart" href=""><img class=" "width="24" height="24" src="./../assets/icons/carritoblanco.png" alt="Carrito" ></a>
-        
-        </div>        
+   <div class="logo">
+       <img  src="./../assets/logo/logo-blanco.svg" alt="logo">
+   </div>
 
-           <!-- Menú de navegación -->
-           <nav>
-        
-            <form class="busqueda mobile" action="">
-                <input type="search" name="" id="buscar" value="Buscar">
-            </form>
+   <div class="cuenta">
+           <a href="#">Iniciar sesión</a>
+           <a href="#">Crear cuenta</a>
+           <a  href="#"><img  class="carrito" src="./../assets/icons/carrito.svg" alt="Carrito"></a>
+   </div>
+   
+ 
+</header>
 
-            <div class="cuenta mobile">
-                
-                <a href="#">Iniciar sesión</a>
-                <a href="#">Crear cuenta</a>
-             </div>
+<nav>
 
-            <ul class="menu">
-                <li class="menu_item "><a href="./../index.html">Inicio</a></li>
-                <li class="menu_item"><a href="./../pages/ropa de danza.html"> </span> Productos</a></li>
-                <li class="menu_item active"><a href="./../pages/talle.html">  Talles</a></li>
-                <li class="menu_item"><a href="./../pages/contacto.html">  Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-        </header>
+    <div class="fondo-nav-container">      
+    </div>
+ 
+    <input type="checkbox" id="check">
+ 
+   
+ 
+    <ul id="menu">
+        <!-- <li class="logo-menu"><img src="./../assets/logo/logo blanco.png" alt=""></li> -->
+        <li class="menu_item active"><a href="./../index.html">Inicio</a></li>
+        <li class="menu_item"><a href="./../pages/ropa de danza.html"> </span> Productos</a></li>
+        <li class="menu_item"><a href="./../pages/talle.html">  Talles</a></li>
+        <li class="menu_item"><a href="./../pages/contacto.html">  Contacto</a></li>
+        <li class="menu_item"><a href="./../pages/campaña.html">Campaña</a></li>
+    </ul>
+ 
+   
+ </nav>
+
+<body>
       
         <div class="story">
             <a href="./../index.html"> Inicio </a> /
@@ -96,6 +81,9 @@
         </section>
 
         <!-- Footer -->
+
+        
+</body>
 <footer class="footer_grid" >
 
     <div class="informacion"> 
@@ -115,9 +103,9 @@
        <h3> Seguinos </h3> 
 
        <div class="redes">
-           <a href="#"><img src="./../assets/icons/instagram.jpg" alt=""></a>
-           <a href="#"><img src="./../assets/icons/facebook.png" alt=""></a>
-           <a href="#"> <img  src="./../assets/icons/spotify.png" alt=""></a>
+           <a href="#"><img src="./../assets/icons/ig.svg" alt=""></a>
+           <a href="#"><img src="./../assets/icons/facebook.svg" alt=""></a>
+           <a href="#"> <img  src="./../assets/icons/spotify.svg" alt=""></a>
           
        </div>
    </div>
@@ -133,9 +121,6 @@
            </form>
 
    </div>
-</div> <!-- Como hago para que me quede del lado right? -->
+</div> 
 </footer>
-        
-</body>
-         
 </html>

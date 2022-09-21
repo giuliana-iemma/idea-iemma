@@ -17,7 +17,6 @@ body{
     display: none;    
 }
 
-
 .home_grid{
     display: grid;
     height: 140vh;
@@ -302,8 +301,6 @@ $breakpoint-tablet: 780px;
 
 }
 
-
-
 /* Productos */
 
 .story{
@@ -435,5 +432,34 @@ $breakpoint-tablet: 780px;
         }
     }
 }
+
+}
+
+/* Talle */
+
+.como-medirte{
+    display: flex;
+    gap: 40px;
+    margin: 20px;
+    width: 95%;
+    /* no lo logro centrar */
+    margin-bottom: 80px;
+
+    .instrucciones-talle{
+        font-size: 18px;
+        width: 50%;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center; 
+        color: white;
+        
+        h4{
+            text-align: left;
+            font-size: 24px;
+        }
+    }
+
 
 }
