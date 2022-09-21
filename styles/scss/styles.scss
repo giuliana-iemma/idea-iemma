@@ -470,6 +470,11 @@ $breakpoint-tablet: 780px;
         .instrucciones-talle{
             text-align: center;
             width: 70%;
+            font-size: 14px;
+        }
+
+        h4{
+            font-size: 18px;
         }
     }
 }
@@ -520,3 +525,22 @@ $breakpoint-tablet: 780px;
 
 }
 
+@media (max-width: $breakpoint-tablet){ 
+    .contacto{
+        @include flex-column-center;
+        .formulario{
+            .entrada{
+                input{
+            font-size: 10px;}}
+            .enviar{
+                height: 30px;
+                font-size: 12px;               
+    
+                &:focus{
+                    background-color:black;
+                    color: white;
+                }
+        }
+    }
+}
+}
