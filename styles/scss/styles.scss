@@ -531,7 +531,8 @@ $breakpoint-tablet: 780px;
         .formulario{
             .entrada{
                 input{
-            font-size: 10px;}}
+                font-size: 10px;}
+             }
             .enviar{
                 height: 30px;
                 font-size: 12px;               
@@ -540,7 +541,7 @@ $breakpoint-tablet: 780px;
                     background-color:black;
                     color: white;
                 }
+            }
         }
     }
-}
 }
