@@ -267,7 +267,7 @@ $breakpoint-tablet: 780px;
                     }
                 }
             }
-        }
+        
     
 
     hr{
@@ -278,10 +278,10 @@ $breakpoint-tablet: 780px;
         background-color: black;
     }
 
-    .info-bottom{
+  /*   .info-bottom{
      @include flex-column-center;
         width: $complete;
-        gap: 50px;
+        gap: 50px;/*  */
 
         div{
             .box {
@@ -298,7 +298,7 @@ $breakpoint-tablet: 780px;
                 }
             }
         }
-    }
+    } 
 
     
 
