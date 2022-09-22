@@ -404,7 +404,7 @@ nav {
 
 /* Index */
 body {
-  background-image: url(./../../assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.jpg);
+  background-image: url(./../../assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.png);
   font-family: "Lato", sans-serif; }
 
 #check {
@@ -495,7 +495,7 @@ body {
   margin-top: 20px;
   margin-inline: 20px; }
   .botones .boton {
-    background-image: url(./../../assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.jpg);
+    background-image: url(./../../assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.png);
     width: 30%;
     height: 300px;
     border-radius: 10px;
@@ -572,7 +572,7 @@ hr {
     gap: 10px;
     border-radius: 2px; }
     .botones .boton {
-      background-image: url(./../../assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.jpg);
+      background-image: url(./../../assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.png);
       width: 100%;
       height: 50vh;
       border-radius: 0px;
