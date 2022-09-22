@@ -545,3 +545,93 @@ $breakpoint-tablet: 780px;
         }
     }
 }
+
+/* Campaña */
+.video-danza{
+    width: 100%;
+}
+
+.container-campaña{
+    width: 100%;
+@include flex-column-center;
+    .box-campaña{
+    @include flex-row-center;
+        .imagen-campaña1{
+        width: 40%;
+            img{
+            width: 100%;
+            }
+        }
+        .info-campaña1{
+        background-color: rgba(187, 187, 187, 0.171);
+        width: 60%;
+        margin: 20px;
+        color: white;
+        text-align: center;
+        @include flex-column-center;
+        justify-content: center;
+                h4{
+                    font-size: 18px;
+                }
+        }
+        .imagen-campaña2{
+            width: 100%;
+            padding: 10px;
+            img{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+        }
+
+        .imagen-campaña3{
+            height: 800px;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .box-campaña2{
+        @include flex-row-center;
+        margin-top: 20px;
+        gap: 10px;
+        width: 100%;
+        img{
+            width: $complete / 3;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-tablet){
+    .container-campaña{
+        @include flex-column-center;
+        .box-campaña{
+            @include flex-column-center;
+
+            .imagen-campaña1{
+                width: 100%;
+            }
+            .info-campaña1{
+                display: none;
+            }
+
+            .imagen-campaña3{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    .box-campaña2{
+        @include flex-column-center;
+        img{
+            width: 100%;
+        }
+    }
+    }
+}

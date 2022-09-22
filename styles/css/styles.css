@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 * {
   padding: 0px;
@@ -808,3 +809,90 @@ hr {
       .contacto .formulario .enviar:focus {
         background-color: black;
         color: white; } }
+
+/* Campaña */
+.video-danza {
+  width: 100%; }
+
+.container-campaña {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-items: center; }
+  .container-campaña .box-campaña {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .container-campaña .box-campaña .imagen-campaña1 {
+      width: 40%; }
+      .container-campaña .box-campaña .imagen-campaña1 img {
+        width: 100%; }
+    .container-campaña .box-campaña .info-campaña1 {
+      background-color: rgba(187, 187, 187, 0.171);
+      width: 60%;
+      margin: 20px;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-items: center;
+      justify-content: center; }
+      .container-campaña .box-campaña .info-campaña1 h4 {
+        font-size: 18px; }
+    .container-campaña .box-campaña .imagen-campaña2 {
+      width: 100%;
+      padding: 10px; }
+      .container-campaña .box-campaña .imagen-campaña2 img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+    .container-campaña .box-campaña .imagen-campaña3 {
+      height: 800px;
+      overflow: hidden; }
+      .container-campaña .box-campaña .imagen-campaña3 img {
+        width: 100%;
+        object-fit: cover; }
+  .container-campaña .box-campaña2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    width: 100%; }
+    .container-campaña .box-campaña2 img {
+      width: 33.33333%;
+      height: auto;
+      object-fit: cover; }
+
+@media (max-width: 780px) {
+  .container-campaña {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-items: center; }
+    .container-campaña .box-campaña {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-items: center; }
+      .container-campaña .box-campaña .imagen-campaña1 {
+        width: 100%; }
+      .container-campaña .box-campaña .info-campaña1 {
+        display: none; }
+      .container-campaña .box-campaña .imagen-campaña3 {
+        width: 100%;
+        height: auto; }
+    .container-campaña .box-campaña2 {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-items: center; }
+      .container-campaña .box-campaña2 img {
+        width: 100%; } }
