@@ -131,17 +131,20 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 40px; }
-  nav .fondo-nav {
-    display: none; }
+  width: 100%;
+  height: 40px;
+  position: sticky;
+  top: 0px; }
   nav ul {
-    width: 60%;
     height: 100%;
+    width: 60%;
+    padding-inline: 10%;
+    top: 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style: none;
-    background-color: rgba(0, 0, 0, 0.178);
+    background-color: rgba(0, 0, 0, 0.704);
     border-bottom: 2px solid rgba(255, 255, 255, 0.336);
     gap: 15%;
     align-items: center;
@@ -177,16 +180,6 @@ nav {
     margin-top: 0px;
     padding-top: 0px;
     height: 100vh; }
-    nav .fondo-nav {
-      display: flex;
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
-      object-position: center;
-      margin-top: 10%;
-      overflow: hidden; }
-      nav .fondo-nav img {
-        object-fit: cover; }
     nav #check:checked ~ ul {
       right: 0%; }
     nav ul {
