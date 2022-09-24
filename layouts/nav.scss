@@ -2,18 +2,22 @@ nav{
 
     @include flex-row-center;
     align-items: center;
+    width: 100%;
     height: 40px;
+/*     position: sticky;
+ */    top: 0px;
 
-    .fondo-nav{
-        display: none;
-    }
+
 
     ul{
-        width: $complete - 40%;
-        height: $complete;
+        height: 100%;
+        width: 100%;
+        left: 25%;
+        padding-inline: 20%;
+        top:0px;
         @include flex-row-center;
         list-style: none;
-        background-color: rgba(0, 0, 0, 0.178) ;
+        background-color: rgba(0, 0, 0, 0.704) ;
         border-bottom: 2px solid rgba(255, 255, 255, 0.336);
         gap: 15%;
         align-items: center;
@@ -53,38 +57,21 @@ nav{
 $breakpoint-mobile: 380px;
 $breakpoint-tablet: 780px;
 @media (max-width: $breakpoint-tablet){
+ 
     nav{
         @include flex-row-left;
         width: $complete;
         margin-top: 0px; 
         padding-top: 0px; 
         height: 100vh;
-
-            .fondo-nav{
-                display: flex;
-                width: 100%;
-                height: 100vh;
-                object-fit:cover;
-                object-position:center;
-                margin-top: 10%;
-                overflow: hidden;
-
-                img {
-                    object-fit: cover;
-                }
-            } 
-          
-            #check:checked ~ ul{
-                right: 0%;
-            }
-
+/*         position: absolute;
+ */        margin-left: -100%;
+       
                 ul{
                 background-color: black;
-                position: fixed;
                 display: flex;
                 flex-direction: column;
                 align-content: top;
-                right: 110%;
                 width: 100%;
                 height: 100%;
                 transition: all .5s;
@@ -115,4 +102,8 @@ $breakpoint-tablet: 780px;
                 }
             }
     }   
+ 
+    #check:checked ~ ul{
+        margin-left: 0%; }
 }
+

@@ -12,10 +12,11 @@ body{
     background-image: url(./../../assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.png);
     font-family: $lato;
     background-color: black;
+    background-attachment: fixed;
 }
     
 #check{
-    display: none;    
+    display: none; 
 }
 
 .home_grid{
@@ -131,6 +132,7 @@ body{
 
     .boton {
         background-image: url(./../../assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.png);
+        background-attachment: fixed;
         width: 30%;
         height: 300px;
         border-radius: 10px;

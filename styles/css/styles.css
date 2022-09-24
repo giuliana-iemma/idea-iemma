@@ -131,17 +131,22 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 40px; }
-  nav .fondo-nav {
-    display: none; }
+  width: 100%;
+  height: 40px;
+  /*     position: sticky;
+ */
+  top: 0px; }
   nav ul {
-    width: 60%;
     height: 100%;
+    width: 100%;
+    left: 25%;
+    padding-inline: 20%;
+    top: 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style: none;
-    background-color: rgba(0, 0, 0, 0.178);
+    background-color: rgba(0, 0, 0, 0.704);
     border-bottom: 2px solid rgba(255, 255, 255, 0.336);
     gap: 15%;
     align-items: center;
@@ -176,26 +181,15 @@ nav {
     width: 100%;
     margin-top: 0px;
     padding-top: 0px;
-    height: 100vh; }
-    nav .fondo-nav {
-      display: flex;
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
-      object-position: center;
-      margin-top: 10%;
-      overflow: hidden; }
-      nav .fondo-nav img {
-        object-fit: cover; }
-    nav #check:checked ~ ul {
-      right: 0%; }
+    height: 100vh;
+    /*         position: absolute;
+ */
+    margin-left: -100%; }
     nav ul {
       background-color: black;
-      position: fixed;
       display: flex;
       flex-direction: column;
       align-content: top;
-      right: 110%;
       width: 100%;
       height: 100%;
       transition: all .5s;
@@ -213,7 +207,9 @@ nav {
           font-size: 20px; }
           nav ul li a:hover, nav ul li .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton nav ul li a:hover, nav ul li a.active, nav ul li .home_grid .info .info_fondo .info_boton a.active:hover, .home_grid .info .info_fondo .info_boton nav ul li a.active:hover {
             background-color: none;
-            font-weight: 700; } }
+            font-weight: 700; }
+  #check:checked ~ ul {
+    margin-left: 0%; } }
 
 .footer_grid {
   display: grid;
@@ -406,7 +402,8 @@ nav {
 body {
   background-image: url(./../../assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.png);
   font-family: "Lato", sans-serif;
-  background-color: black; }
+  background-color: black;
+  background-attachment: fixed; }
 
 #check {
   display: none; }
@@ -497,6 +494,7 @@ body {
   margin-inline: 20px; }
   .botones .boton {
     background-image: url(./../../assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.png);
+    background-attachment: fixed;
     width: 30%;
     height: 300px;
     border-radius: 10px;
