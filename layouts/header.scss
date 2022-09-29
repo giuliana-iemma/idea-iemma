@@ -87,7 +87,7 @@ header {
             }
 
             img{
-                width: 24px;
+                width: 40px;
                 justify-self: center;
             }  
 
@@ -101,7 +101,7 @@ header {
                 transition: all 1s;
 
                 &:hover{
-                    transform: scale(120%);
+                    transform: scale(110%);
                 }
             }
         }
@@ -114,6 +114,7 @@ $breakpoint-tablet: 780px;
 @media (max-width: $breakpoint-tablet){
     header {
         width: $complete;
+        padding-block: 10px;
         display: flex;
         background-color: black;
         justify-content: space-evenly;
@@ -126,7 +127,7 @@ $breakpoint-tablet: 780px;
             z-index: 1;
             width: $complete - 70%;
             .burger{
-                width: 50px;
+                width: 30px;
             }
         }
         .cuenta {
@@ -143,7 +144,7 @@ $breakpoint-tablet: 780px;
             
             
             img {
-                width: 100px;
+                width: 80px;
             }
         }
     }

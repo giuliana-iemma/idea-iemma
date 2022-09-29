@@ -87,7 +87,7 @@ header {
         font-weight: 600;
         color: white; }
       header .cuenta a img, header .cuenta .home_grid .info .info_fondo .info_boton a:hover img, .home_grid .info .info_fondo .info_boton header .cuenta a:hover img {
-        width: 24px;
+        width: 40px;
         justify-self: center; }
       header .cuenta a.carrito, header .cuenta .home_grid .info .info_fondo .info_boton a.carrito:hover, .home_grid .info .info_fondo .info_boton header .cuenta a.carrito:hover {
         display: flex;
@@ -98,11 +98,12 @@ header {
         height: 100%;
         transition: all 1s; }
         header .cuenta a .carrito:hover, header .cuenta .home_grid .info .info_fondo .info_boton a:hover .carrito:hover, .home_grid .info .info_fondo .info_boton header .cuenta a:hover .carrito:hover {
-          transform: scale(120%); }
+          transform: scale(110%); }
 
 @media (max-width: 780px) {
   header {
     width: 100%;
+    padding-block: 10px;
     display: flex;
     background-color: black;
     justify-content: space-evenly;
@@ -114,7 +115,7 @@ header {
       z-index: 1;
       width: 30%; }
       header .checkbtn .burger {
-        width: 50px; }
+        width: 30px; }
     header .cuenta {
       display: none; }
     header .buscar {
@@ -125,7 +126,7 @@ header {
       justify-content: right;
       width: 70%; }
       header .logo img {
-        width: 100px; } }
+        width: 80px; } }
 
 nav {
   display: flex;
@@ -274,10 +275,10 @@ nav {
     justify-content: left;
     gap: 15px; }
     .footer_grid .redes a img, .footer_grid .redes .home_grid .info .info_fondo .info_boton a:hover img, .home_grid .info .info_fondo .info_boton .footer_grid .redes a:hover img {
-      width: 24px;
+      width: 30px;
       transition: all 1s; }
     .footer_grid .redes a:hover img, .footer_grid .redes .home_grid .info .info_fondo .info_boton a:hover img, .home_grid .info .info_fondo .info_boton .footer_grid .redes a:hover img {
-      width: 26px; }
+      width: 33px; }
   .footer_grid .newsletter {
     grid-area: newsletter;
     width: 100%;
@@ -353,7 +354,7 @@ nav {
         justify-content: center;
         gap: 10px; }
         .footer_grid .seguinos .redes a img, .footer_grid .seguinos .redes .home_grid .info .info_fondo .info_boton a:hover img, .home_grid .info .info_fondo .info_boton .footer_grid .seguinos .redes a:hover img {
-          width: 20px; }
+          width: 40px; }
     .footer_grid .newsletter {
       margin-top: 20px;
       display: flex;
