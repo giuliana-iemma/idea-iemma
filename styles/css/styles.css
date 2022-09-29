@@ -666,10 +666,11 @@ hr {
         transition: all 1s;
         position: absolute;
         padding: 10px;
-        top: 75%;
+        bottom: 30px;
         font-size: 150%;
         background-color: rgba(0, 0, 0, 0.367);
-        width: 100%; }
+        width: 100%;
+        z-index: 1; }
         .container .container-img .box-img .datos-prod strong {
           font-size: 16px; }
       .container .container-img .box-img figure {
@@ -722,9 +723,10 @@ hr {
           height: 500px; }
           .container .container-img .box-img a .img-prod, .container .container-img .box-img .home_grid .info .info_fondo .info_boton a:hover .img-prod, .home_grid .info .info_fondo .info_boton .container .container-img .box-img a:hover .img-prod {
             overflow: hidden;
-            height: auto; }
+            height: 100%;
+            object-fit: cover; }
         .container .container-img .box-img .datos-prod {
-          top: 70%; }
+          bottom: 30px; }
           .container .container-img .box-img .datos-prod h5 {
             font-size: 12px; }
           .container .container-img .box-img .datos-prod h6 {
