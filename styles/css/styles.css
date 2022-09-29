@@ -669,7 +669,8 @@ hr {
         top: 75%;
         font-size: 150%;
         background-color: rgba(0, 0, 0, 0.367);
-        width: 100%; }
+        width: 100%;
+        z-index: 1; }
         .container .container-img .box-img .datos-prod strong {
           font-size: 16px; }
       .container .container-img .box-img figure {
