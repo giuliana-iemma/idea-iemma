@@ -346,10 +346,11 @@ $breakpoint-tablet: 780px;
                 @include enlace;
                 position: absolute;
                 padding: 10px;
-                top:75%;
+                bottom: 30px;
                 font-size: 150%;
                 background-color: rgba(0, 0, 0, 0.367);
                 width: 100%;
+                z-index: 1;
                 
                 strong{
                     font-size: 16px;
@@ -416,11 +417,13 @@ $breakpoint-tablet: 780px;
                 height: 500px;
                 .img-prod{
                     overflow: hidden;
-                    height: auto;
+                    height: 100%;
+                    object-fit: cover;
+
                 }
             }
             .datos-prod{
-                top: 70%;
+                bottom: 30px;
                 h5 {
                     font-size: map-get($font-title, mobile);
                 }
