@@ -132,13 +132,14 @@ nav {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 40px;
+  height: 50px;
   position: sticky;
-  top: 0px; }
+  top: 0px;
+  z-index: 1; }
   nav ul {
     height: 100%;
-    width: 60%;
-    padding-inline: 10%;
+    width: 100%;
+    padding-inline: 20%;
     top: 0px;
     display: flex;
     flex-direction: row;
@@ -157,19 +158,24 @@ nav {
       text-decoration: none;
       color: white;
       font-weight: 500;
-      transition: all 1s; }
+      transition: all 1s;
+      padding-bottom: 3px;
+      transition: all .5s; }
       nav ul .menu_item a:hover, nav ul .menu_item .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton nav ul .menu_item a:hover {
         text-decoration: none;
         font-weight: 600;
-        color: white; }
+        color: white;
+        border-bottom: 2px solid white; }
       nav ul .menu_item a:visited, nav ul .menu_item .home_grid .info .info_fondo .info_boton a:visited:hover, .home_grid .info .info_fondo .info_boton nav ul .menu_item a:visited:hover {
         text-decoration: none;
         color: white;
         font-weight: 500;
         transition: all 1s; }
-      nav ul .menu_item a.active a, nav ul .menu_item .home_grid .info .info_fondo .info_boton a.active:hover a, .home_grid .info .info_fondo .info_boton nav ul .menu_item a.active:hover a, nav ul .menu_item a.active .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton nav ul .menu_item a.active a:hover {
-        font-weight: 800;
-        color: white(12, 10, 10); }
+    nav ul .menu_item .active {
+      text-decoration: none;
+      font-weight: 600;
+      color: white;
+      border-bottom: 2px solid white; }
 
 @media (max-width: 780px) {
   nav {
@@ -193,7 +199,7 @@ nav {
       height: 100%;
       transition: all .5s;
       gap: 5%;
-      z-index: 0.5; }
+      z-index: 111111111; }
       nav ul .logo-menu {
         display: block; }
       nav ul li {
@@ -637,7 +643,8 @@ hr {
 
 .container {
   object-fit: fill;
-  margin-top: 20px; }
+  margin-top: 20px;
+  z-index: -1; }
   .container .container-img {
     width: 80%;
     height: 100%;
@@ -706,16 +713,19 @@ hr {
         align-items: center;
         justify-items: center;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
         border-radius: 10px;
         overflow: hidden;
-        height: 100%;
         position: relative; }
         .container .container-img .box-img a, .container .container-img .box-img .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton .container .container-img .box-img a:hover {
           width: 100%;
           height: 500px; }
           .container .container-img .box-img a .img-prod, .container .container-img .box-img .home_grid .info .info_fondo .info_boton a:hover .img-prod, .home_grid .info .info_fondo .info_boton .container .container-img .box-img a:hover .img-prod {
             overflow: hidden;
-            height: auto; }
+            height: 100%;
+            object-fit: cover; }
         .container .container-img .box-img .datos-prod {
           top: 70%; }
           .container .container-img .box-img .datos-prod h5 {
