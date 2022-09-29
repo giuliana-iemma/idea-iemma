@@ -186,7 +186,6 @@ nav {
     width: 100%;
     margin-top: 0px;
     padding-top: 0px;
-    height: 100vh;
     z-index: 2; }
     nav #check:checked ~ ul {
       right: 0%; }
@@ -408,7 +407,8 @@ body {
   background-image: url(./../../assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.png);
   font-family: "Lato", sans-serif;
   background-color: black;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  position: relative; }
 
 #check {
   display: none; }
