@@ -71,13 +71,26 @@ $complete: 100%;
 @mixin enlace-hover{
     text-decoration: none;
     font-weight: 600;
-    color: white;
 }
 
 @mixin enlace-disabled {
     text-decoration: none;
     color: grey;
     transition: 1s;
+}
+
+@mixin boton {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.195);
+    border-radius: 2px;
+    border: none;
+    font-weight: 600;
+    transition: all .5s;
+}
+
+@mixin boton-hover{
+    background-color: rgba(0, 0, 0, 0.254);
+    color: rgb(200, 141, 141);    
 }
 
 

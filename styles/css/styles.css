@@ -86,8 +86,7 @@ header {
       transition: all 1s; }
       header .cuenta a:hover, header .cuenta .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton header .cuenta a:hover {
         text-decoration: none;
-        font-weight: 600;
-        color: white; }
+        font-weight: 600; }
       header .cuenta a img, header .cuenta .home_grid .info .info_fondo .info_boton a:hover img, .home_grid .info .info_fondo .info_boton header .cuenta a:hover img {
         width: 40px;
         justify-self: center; }
@@ -168,7 +167,6 @@ nav {
       nav ul .menu_item a:hover, nav ul .menu_item .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton nav ul .menu_item a:hover {
         text-decoration: none;
         font-weight: 600;
-        color: white;
         border-bottom: 2px solid white; }
       nav ul .menu_item a:visited, nav ul .menu_item .home_grid .info .info_fondo .info_boton a:visited:hover, .home_grid .info .info_fondo .info_boton nav ul .menu_item a:visited:hover {
         text-decoration: none;
@@ -178,7 +176,6 @@ nav {
     nav ul .menu_item .active {
       text-decoration: none;
       font-weight: 600;
-      color: white;
       border-bottom: 2px solid white; }
 
 @media (max-width: 780px) {
@@ -260,8 +257,7 @@ nav {
           transition: all 1s; }
         .footer_grid .informacion ul .informacion-enlace:hover {
           text-decoration: none;
-          font-weight: 600;
-          color: white; }
+          font-weight: 600; }
   .footer_grid .seguinos {
     grid-area: seguinos;
     padding-top: 20px;
@@ -280,7 +276,7 @@ nav {
       width: 30px;
       transition: all 1s; }
     .footer_grid .redes a:hover img, .footer_grid .redes .home_grid .info .info_fondo .info_boton a:hover img, .home_grid .info .info_fondo .info_boton .footer_grid .redes a:hover img {
-      width: 33px; }
+      transform: scale(1.2, 1.2); }
   .footer_grid .newsletter {
     grid-area: newsletter;
     width: 100%;
@@ -310,7 +306,17 @@ nav {
         height: 30px; }
       .footer_grid .newsletter form .nws-button {
         width: 150%;
-        height: 30px; }
+        height: 30px;
+        cursor: pointer;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.195);
+        border-radius: 2px;
+        border: none;
+        font-weight: 600;
+        transition: all .5s; }
+        .footer_grid .newsletter form .nws-button:hover {
+          background-color: rgba(0, 0, 0, 0.254);
+          color: #c88d8d; }
 
 @media (max-width: 780px) {
   .footer_grid {
@@ -476,16 +482,21 @@ body {
         align-content: center;
         padding-top: 20px; }
         .home_grid .info .info_fondo .info_boton a, .home_grid .info .info_fondo .info_boton a:hover {
+          color: white;
+          background-color: rgba(255, 255, 255, 0.195);
+          border-radius: 2px;
+          border: none;
+          font-weight: 600;
+          transition: all .5s;
           text-decoration: none;
-          color: black;
-          background-color: white;
           width: 130px;
           height: 30px;
           display: flex;
           justify-content: center;
           align-items: center; }
           .home_grid .info .info_fondo .info_boton a:hover {
-            background-color: wheat; }
+            background-color: rgba(0, 0, 0, 0.254);
+            color: #c88d8d; }
       .home_grid .info .info_fondo h1 {
         color: white;
         font-size: 100px;
@@ -610,8 +621,7 @@ hr {
           font-size: 12px; }
           .botones .boton .boton-enlace a:focus, .botones .boton .boton-enlace .home_grid .info .info_fondo .info_boton a:focus:hover, .home_grid .info .info_fondo .info_boton .botones .boton .boton-enlace a:focus:hover {
             text-decoration: none;
-            font-weight: 600;
-            color: white; }
+            font-weight: 600; }
             .botones .boton .boton-enlace a:focus img, .botones .boton .boton-enlace .home_grid .info .info_fondo .info_boton a:focus:hover img, .home_grid .info .info_fondo .info_boton .botones .boton .boton-enlace a:focus:hover img {
               width: 50px; }
   hr {
@@ -647,8 +657,7 @@ hr {
     transition: 1s; }
     .story a:hover, .story .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton .story a:hover {
       text-decoration: none;
-      font-weight: 600;
-      color: white; }
+      font-weight: 600; }
 
 .container {
   object-fit: fill;
@@ -801,12 +810,17 @@ hr {
     .contacto .formulario .enviar {
       height: 35px;
       font-size: 14px;
-      background-color: white;
+      color: white;
+      background-color: rgba(255, 255, 255, 0.195);
+      border-radius: 2px;
+      border: none;
+      font-weight: 600;
+      transition: all .5s;
       cursor: pointer;
       transition: all 1s; }
       .contacto .formulario .enviar:hover {
-        color: white;
-        background-color: black; }
+        background-color: rgba(0, 0, 0, 0.254);
+        color: #c88d8d; }
       .contacto .formulario .enviar:focus {
         background-color: #2f2f2f;
         color: white; }

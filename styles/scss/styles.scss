@@ -91,19 +91,18 @@ body{
                 padding-top: 20px;
     
                 a {
+                    @include boton;
                     text-decoration: none;
-                    color: black;
-                    background-color: white;
                     width: 130px;
                     height: 30px; 
                     display: flex;
                     justify-content: center;
-                    align-items: center;
+                    align-items: center;                    
                     
                     &:hover{
                         @extend a;
-                        background-color: wheat;    
-                        }
+                        @include boton-hover;
+                    }
                 }
              }
 
@@ -528,13 +527,13 @@ $breakpoint-tablet: 780px;
         .enviar{
             height: 35px;
             font-size: 14px;
-            background-color: white;
+            @include boton;
             cursor: pointer;
             transition: all 1s;
+          
 
             &:hover{
-                color: white;
-                background-color: black;
+               @include boton-hover;
             }
 
             &:focus{

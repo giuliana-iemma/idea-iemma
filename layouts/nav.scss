@@ -21,8 +21,6 @@ nav{
         align-items: center;
         border-top-left-radius: $border-radius;
         border-top-right-radius: $border-radius;
-       
-
 
         .logo-menu{
             display: none;
@@ -37,6 +35,7 @@ nav{
 
                 &:hover {
                     @include enlace-hover;
+                    
                     border-bottom: 2px solid white;
                     
                 }

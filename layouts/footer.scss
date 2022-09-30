@@ -73,7 +73,7 @@
 
                     &:hover{
                         img{
-                            width: 33px;
+                            transform:scale(1.2, 1.2);
                         }
                     }
                 }
@@ -109,6 +109,12 @@
             .nws-button {
                 width: $complete + 50%;
                 height: 30px;
+                cursor: pointer;
+                @include boton;
+
+                &:hover{
+                    @include boton-hover;
+                }
                 }
         }
     }
