@@ -7,8 +7,7 @@ nav{
     position: sticky;
     top: 0px;
     z-index: 2;
-
-
+    
     ul{
         height: 100%;
         width: 100%;
@@ -22,6 +21,7 @@ nav{
         align-items: center;
         border-top-left-radius: $border-radius;
         border-top-right-radius: $border-radius;
+       
 
 
         .logo-menu{
@@ -38,6 +38,7 @@ nav{
                 &:hover {
                     @include enlace-hover;
                     border-bottom: 2px solid white;
+                    
                 }
 
                 &:visited{

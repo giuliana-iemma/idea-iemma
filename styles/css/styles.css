@@ -12,7 +12,9 @@ header {
   flex-direction: row;
   margin-block: 20px;
   gap: 20px;
-  z-index: 3; }
+  z-index: 3;
+  animation: fadeIn;
+  animation-duration: 2s; }
   header .checkbtn {
     display: none; }
   header .logo {
@@ -424,7 +426,9 @@ body {
   background-position-x: center;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat 4, 1fr;
-  grid-template-areas: "info fondo" "info fondo" "info fondo" "info fondo"; }
+  grid-template-areas: "info fondo" "info fondo" "info fondo" "info fondo";
+  animation: fadeIn;
+  animation-duration: 5s; }
   .home_grid .fondo {
     grid-area: fondo;
     width: 100%;
@@ -508,7 +512,9 @@ body {
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    animation: fadeIn;
+    animation-duration: 2s; }
     .botones .boton .boton-enlace {
       display: flex;
       flex-direction: column;

@@ -6,6 +6,8 @@ header {
     margin-block:20px;
     gap: 20px;
     z-index: 3;
+    animation: fadeIn;
+    animation-duration: 2s;
 
     .checkbtn {
         display: none;
@@ -19,6 +21,7 @@ header {
         img {
             width: $complete - 40%;
         }
+        
     }
 
     .buscar{ 

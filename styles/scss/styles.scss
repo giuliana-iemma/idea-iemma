@@ -35,6 +35,8 @@ body{
     "info fondo"
     "info fondo"
     "info fondo";
+    animation: fadeIn;
+    animation-duration: 5s;
 
     .fondo {
         grid-area: fondo;
@@ -71,7 +73,7 @@ body{
         width: 100%;
         height: 100%;
         overflow: hidden;
-
+        
         .info_fondo {
             background-color: #ffffff1e;
             height: 100%;
@@ -109,6 +111,8 @@ body{
                     color: white;
                     font-size: 100px;
                     font-weight: 800;
+                    
+                    
                 }
 
                 p{
@@ -116,6 +120,7 @@ body{
                     color: white;
                     text-align: justify;
                     width: 90%;
+
                 }       
         }
 
@@ -129,6 +134,7 @@ body{
     justify-content: space-between;
     margin-top: 20px;
     margin-inline: 20px;
+   
 
 
     .boton {
@@ -142,6 +148,8 @@ body{
         display: flex;  
         justify-content: center;
         align-items: center;
+        animation: fadeIn;
+        animation-duration: 2s;
 
         .boton-enlace {
             display: flex;
@@ -334,7 +342,7 @@ $breakpoint-tablet: 780px;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
+        grid-gap: 10px;        
 
         .box-img{
             overflow: hidden;
@@ -343,6 +351,7 @@ $breakpoint-tablet: 780px;
             text-align: center;
             width: 100%;
             height: 100%;   
+            
 
             .datos-prod{
                 @include enlace;
@@ -366,6 +375,7 @@ $breakpoint-tablet: 780px;
                 img {
                     width: 100%;
                     height: 100%;
+                    
                 }
             }
 
