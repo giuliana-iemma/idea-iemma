@@ -24,7 +24,7 @@ body{
     display: grid;
     height: 140vh;
     width: 100%;
-    background-image: url(./../../assets/imagenes/1.jpg);
+    background-image: url(./../../assets/imagenes/1.webp);
     background-size: 140%;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -374,7 +374,7 @@ $breakpoint-tablet: 780px;
                 img {
                     width: 100%;
                     height: 100%;
-                    
+                    object-fit: cover;
                 }
             }
 
@@ -506,6 +506,8 @@ $breakpoint-tablet: 780px;
     gap: 30px;
     margin: 20px;
 
+    
+
     .formulario{
         display: flex;
         flex-direction: column;
@@ -530,6 +532,7 @@ $breakpoint-tablet: 780px;
             @include boton;
             cursor: pointer;
             transition: all 1s;
+            margin-top:20px;
           
 
             &:hover{
@@ -541,9 +544,7 @@ $breakpoint-tablet: 780px;
                 color: white;
             }
         }
-        
     }
-
 }
 
 @media (max-width: $breakpoint-tablet){ 
