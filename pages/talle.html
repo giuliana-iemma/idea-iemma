@@ -13,9 +13,9 @@
   />
 </head>
 
-
-
 <body>
+
+<!-- Header -->
     <header>
         <label for="check" class="checkbtn"> <img class="burger" src="./../assets/icons/burger.svg" alt=""></label>
     
@@ -23,7 +23,7 @@
            <input type="text" placeholder="Buscar" required>
     
            <div class="btn-buscar">
-               <img src="./../assets/icons/search.svg" alt="">      <!-- por qué no queda dentro del grid? -->   
+               <img src="./../assets/icons/search.svg" alt="">     
            </div>
        </div>
        
@@ -39,7 +39,8 @@
        
      
     </header>
-    
+
+<!-- Menú de navegación -->
     <nav>
        
         <input type="checkbox" id="check">
@@ -53,73 +54,76 @@
         </ul>
      
        
-     </nav>
-     
-        <div class="story">
-            <a href="./../index.html"> Inicio </a> /
-            <strong> Talles</strong>
-        </div>
+    </nav>
+   
+<!-- Cuerpo -->   
+    <div class="story">
+        <a href="./../index.html"> Inicio </a> /
+        <strong> Talles</strong>
+    </div>
     
-        <section class="como-medirte">
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gQLRAgQp1jg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-
-                <div class="instrucciones-talle">
-                    <h4>¿Cómo medir tu cuerpo para conocer tu talle?</h4>
-                   <ol>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione ad culpa quos quidem doloremque enim atque qui, similique asperiores. </li>
-                        <li>Soluta quasi ullam commodi rem! Dignissimos dolorem ut dolore numquam accusantium?</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellat architecto voluptate, recusandae inventore iste ratione iure laborum molestias?</li>
-                        <li> Veniam laborum eos reiciendis odit ipsam rerum consequuntur reprehenderit aliquid saepe.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe distinctio sunt velit, necessitatibus, ratione accusamus aliquid possimus ipsum placeat quos laborum adipisci, beatae at cum neque eos voluptas numquam nisi?</li>
-                   </ol>
-                </div>
+    <section class="como-medirte">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gQLRAgQp1jg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </section>
 
-    <!-- Footer -->
+            <div class="instrucciones-talle">
+                <h4>¿Cómo medir tu cuerpo para conocer tu talle?</h4>
+                <ol>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione ad culpa quos quidem doloremque enim atque qui, similique asperiores. </li>
+                    <li>Soluta quasi ullam commodi rem! Dignissimos dolorem ut dolore numquam accusantium?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellat architecto voluptate, recusandae inventore iste ratione iure laborum molestias?</li>
+                    <li> Veniam laborum eos reiciendis odit ipsam rerum consequuntur reprehenderit aliquid saepe.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe distinctio sunt velit, necessitatibus, ratione accusamus aliquid possimus ipsum placeat quos laborum adipisci, beatae at cum neque eos voluptas numquam nisi?</li>
+                </ol>
+            </div>
+        </div>
+    </section>
 
-    <footer class="footer_grid" >
+<!-- Footer -->
 
-        <div class="informacion"> 
-            <h3>Información </h3>
+<footer class="footer_grid" >
+
+    <div class="informacion"> 
+        <h3>Información </h3>
+        
+        <ul>
+            <li><a  class="informacion-enlace" href="./pages/contacto.html">Contacto</a></li>
+            <li><a  class="informacion-enlace" href="#">Cómo comprar?</a></li>
+            <li><a  class="informacion-enlace" href="#">Envíos</a></li>
+            <li><a class="informacion-enlace"  href="#">Medios de pago</a></li>
+            <li><a  class="informacion-enlace" href="#">Cambios y devoluciones</a></li>
+        </ul>
+    </div>
+
+    <div class="seguinos">
             
-            <ul>
-                <li><a  class="informacion-enlace" href="./pages/contacto.html">Contacto</a></li>
-                <li><a  class="informacion-enlace" href="#">Cómo comprar?</a></li>
-                <li><a  class="informacion-enlace" href="#">Envíos</a></li>
-                <li><a class="informacion-enlace"  href="#">Medios de pago</a></li>
-                <li><a  class="informacion-enlace" href="#">Cambios y devoluciones</a></li>
-            </ul>
+        <h3> Seguinos </h3> 
+
+        <div class="redes">
+            <a href="#"><img src="./../assets/icons/ig.svg" alt=""></a>
+            <a href="#"><img src="./../assets/icons/facebook.svg" alt=""></a>
+            <a href="#"> <img  src="./../assets/icons/spotify.svg" alt=""></a>
+            
         </div>
+    </div>
+
+    <div class="newsletter">
     
-        <div class="seguinos">
-                
-            <h3> Seguinos </h3> 
+        <h3>Querés enterarte de las últimas novedades?</h3> 
+            <p>Sumate a nuestro Newsletter</p>
+
+            <form action="">
+                <input class="nws-email" type="email" value="ejemplo@gmail.com">
+                <input class="nws-button" type="button" value="Suscribirse"> 
+            </form>
+
+    </div>
+</div> 
+</footer>
+
+<!-- Scripts -->
     
-            <div class="redes">
-                <a href="#"><img src="./../assets/icons/ig.svg" alt=""></a>
-                <a href="#"><img src="./../assets/icons/facebook.svg" alt=""></a>
-                <a href="#"> <img  src="./../assets/icons/spotify.svg" alt=""></a>
-                
-            </div>
-        </div>
-    
-        <div class="newsletter">
-        
-            <h3>Querés enterarte de las últimas novedades?</h3> 
-                <p>Sumate a nuestro Newsletter</p>
-    
-                <form action="">
-                    <input class="nws-email" type="email" value="ejemplo@gmail.com">
-                    <input class="nws-button" type="button" value="Suscribirse"> 
-                </form>
-    
-        </div>
-    </div> 
-    </footer>
-        
 <script src="js/wow.min.js"></script>
 <script> new WOW() .init(); </script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

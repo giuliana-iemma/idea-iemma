@@ -584,7 +584,16 @@ hr {
 
 @media (max-width: 780px) {
   .home_grid {
-    display: none; }
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    height: 100%; }
+    .home_grid .info {
+      height: 100%; }
+      .home_grid .info .info_fondo h1 {
+        font-size: 80px; }
   .botones {
     display: flex;
     flex-direction: column;

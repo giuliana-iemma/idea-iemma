@@ -11,14 +11,13 @@
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <link rel ="stylesheet" href ="https://raw.github.com/daneden/animate.css/master/animate.css">
  
 
 </head>
 
-
 <body>
-
-
+<!-- Header -->
     <header>
              <label for="check" class="checkbtn"> <img class="burger" src="./assets/icons/burger.svg" alt=""></label>
         
@@ -42,40 +41,28 @@
             </div>
             
           
-        </header>
+    </header>
 
-        <nav>     
+<!-- Menú de navegación -->
+    <nav>     
 
-            <input type="checkbox" id="check">
+        <input type="checkbox" id="check">
 
 
-            <ul>
-                <li class="menu_item"><a class="active" href="./index.html">Inicio</a></li>
-                <li class="menu_item"><a href="./pages/productos.html"> </span> Productos</a></li>
-                <li class="menu_item"><a href="./pages/talle.html">  Talles</a></li>
-                <li class="menu_item"><a href="./pages/contacto.html">  Contacto</a></li>
-                <li class="menu_item"><a href="./pages/campaña.html">Campaña</a></li>
-            </ul>
+        <ul>
+            <li class="menu_item"><a class="active" href="./index.html">Inicio</a></li>
+            <li class="menu_item"><a href="./pages/productos.html"> </span> Productos</a></li>
+            <li class="menu_item"><a href="./pages/talle.html">  Talles</a></li>
+            <li class="menu_item"><a href="./pages/contacto.html">  Contacto</a></li>
+            <li class="menu_item"><a href="./pages/campaña.html">Campaña</a></li>
+        </ul>
 
-           
-        </nav>
+        
+    </nav>            
 
-           
-
- 
-
- <!-- Menú de navegación -->
-            
-            
-
+<!-- Cuerpo -->
+<!-- Banner -->
    <section class="home_grid">
-
-       
-     <!--    <div class="fondo">
-            <div class="fondo-efecto">
-               <img src="./assets/imagenes/empty-dark-grey-wall-with-texture-good-for-background.png" alt="">
-            </div>    
-        </div> -->
 
         <div class="info">
             <div class="info_fondo">
@@ -84,31 +71,28 @@
                     Nuestro propósito principal es que cada bailarina se sienta cómoda y linda al momento de entrenar en una clase.
                     </p>
 
-                <div class="info_boton"> <a href="#">Ver productos</a>                
+                <div class="info_boton"> <a href="./pages/productos.html">Ver productos</a>                
                 </div>
 
             </div>
         </div>
     </section>
-</div>
 
+<!-- Botones -->
+    <section class="botones">
 
+            <div class="boton">
+                <a class="boton-enlace" href="#"><img  src="./assets/menu/danza.svg" alt=""> Danza</a>
+            </div>
 
-<!-- botones desktop -->
+            <div class="boton">
+                <a class="boton-enlace" href="#"> <img src="./assets/menu/urban.svg" alt=""> Urban</a>
+            </div>
 
- <section class="botones">
+            <div class="boton">
+                <a class="boton-enlace" href="#"><img src="./assets/menu/yoga.svg" alt=""> Yoga y fitness</a>
+            </div>
 
-        <div class="boton">
-            <a class="boton-enlace" href="#"><img  src="./assets/menu/danza.svg" alt=""> Danza</a>
-        </div>
-
-        <div class="boton">
-            <a class="boton-enlace" href="#"> <img src="./assets/menu/urban.svg" alt=""> Urban</a>
-        </div>
-
-        <div class="boton">
-            <a class="boton-enlace" href="#"><img src="./assets/menu/yoga.svg" alt=""> Yoga y fitness</a>
-        </div>
     </section>
 
 
@@ -203,8 +187,9 @@
 </footer>
 
 <script src="js/wow.min.js"></script>
-<script> new WOW() .init(); </script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+new WOW().init();
+</script>
 
 
 </body>
