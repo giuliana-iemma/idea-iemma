@@ -525,7 +525,7 @@ body {
     justify-content: center;
     align-items: center;
     animation: fadeIn;
-    animation-duration: 1s; }
+    animation-duration: .5s; }
     .botones .boton .boton-enlace {
       display: flex;
       flex-direction: column;
