@@ -768,7 +768,7 @@ hr {
 .como-medirte {
   display: flex;
   gap: 40px;
-  margin: 20px;
+  padding: 20px;
   width: 100%;
   margin-bottom: 80px; }
   .como-medirte .instrucciones-talle {
