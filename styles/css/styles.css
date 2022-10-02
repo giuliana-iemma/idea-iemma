@@ -784,6 +784,8 @@ hr {
     .como-medirte .instrucciones-talle h4 {
       text-align: left;
       font-size: 24px; }
+    .como-medirte .instrucciones-talle h6 {
+      font-size: 18px; }
 
 @media (max-width: 780px) {
   .como-medirte {
