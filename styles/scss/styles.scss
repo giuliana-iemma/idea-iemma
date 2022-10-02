@@ -530,8 +530,6 @@ $breakpoint-tablet: 780px;
     gap: 30px;
     margin: 20px;
 
-    
-
     .formulario{
         display: flex;
         flex-direction: column;
@@ -575,6 +573,7 @@ $breakpoint-tablet: 780px;
     .contacto{
         @include flex-column-center;
         .formulario{
+            width: 100%;
             .entrada{
                 input{
                 font-size: 10px;}

@@ -847,14 +847,16 @@ hr {
     align-content: center;
     align-items: center;
     justify-items: center; }
-    .contacto .formulario .entrada input {
-      font-size: 10px; }
-    .contacto .formulario .enviar {
-      height: 30px;
-      font-size: 12px; }
-      .contacto .formulario .enviar:focus {
-        background-color: black;
-        color: white; } }
+    .contacto .formulario {
+      width: 100%; }
+      .contacto .formulario .entrada input {
+        font-size: 10px; }
+      .contacto .formulario .enviar {
+        height: 30px;
+        font-size: 12px; }
+        .contacto .formulario .enviar:focus {
+          background-color: black;
+          color: white; } }
 
 /* Campaña */
 .video-danza {
