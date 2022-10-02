@@ -769,8 +769,7 @@ hr {
   display: flex;
   gap: 40px;
   margin: 20px;
-  width: 95%;
-  /* no lo logro centrar */
+  width: 100%;
   margin-bottom: 80px; }
   .como-medirte .instrucciones-talle {
     font-size: 18px;
@@ -795,14 +794,14 @@ hr {
     align-items: center;
     justify-items: center; }
     .como-medirte .video iframe {
-      width: 80%; }
+      width: 100%; }
     .como-medirte .instrucciones-talle {
       text-align: center;
       width: 70%;
       font-size: 14px; }
-    .como-medirte h4 {
-      font-size: 18px;
-      text-align: center; } }
+      .como-medirte .instrucciones-talle h4 {
+        text-align: center;
+        font-size: 18px; } }
 
 /* Contacto */
 .contacto {
