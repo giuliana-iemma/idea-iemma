@@ -476,12 +476,7 @@ $breakpoint-tablet: 780px;
     width: 95%;
     /* no lo logro centrar */
     margin-bottom: 80px;
-
-    .video{
-        iframe{
-            width: 100%;
-        }
-    }
+    
     .instrucciones-talle{
         font-size: 18px;
         width: 50%;
@@ -508,6 +503,11 @@ $breakpoint-tablet: 780px;
 @media (max-width: $breakpoint-tablet){ 
     .como-medirte{
         @include flex-column-center;
+
+        .video{
+            iframe{
+                width: 110%;
+            }
         .instrucciones-talle{
             text-align: center;
             width: 70%;
