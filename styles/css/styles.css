@@ -619,7 +619,7 @@ hr {
         flex-direction: column;
         width: 100%;
         height: 200px;
-        font-size: 12px; }
+        font-size: 14px; }
         .botones .boton .boton-enlace img {
           width: 30%; }
         .botones .boton .boton-enlace a, .botones .boton .boton-enlace .home_grid .info .info_fondo .info_boton a:hover, .home_grid .info .info_fondo .info_boton .botones .boton .boton-enlace a:hover {
@@ -627,7 +627,7 @@ hr {
           color: white;
           font-weight: 500;
           transition: all 1s;
-          font-size: 12px; }
+          font-size: 14px; }
           .botones .boton .boton-enlace a:focus, .botones .boton .boton-enlace .home_grid .info .info_fondo .info_boton a:focus:hover, .home_grid .info .info_fondo .info_boton .botones .boton .boton-enlace a:focus:hover {
             text-decoration: none;
             font-weight: 600; }
@@ -651,9 +651,9 @@ hr {
     .info-bottom div .box img {
       width: 32px; }
     .info-bottom div .box h3 {
-      font-size: 12px; }
+      font-size: 14px; }
     .info-bottom div .box p {
-      font-size: 10px; } }
+      font-size: 12px; } }
 
 /* Productos */
 .story {
@@ -720,7 +720,7 @@ hr {
 
 @media (max-width: 780px) {
   .story {
-    font-size: 12px; }
+    font-size: 14px; }
   .container {
     display: flex;
     flex-direction: column;
@@ -759,9 +759,9 @@ hr {
         .container .container-img .box-img .datos-prod {
           bottom: 30px; }
           .container .container-img .box-img .datos-prod h5 {
-            font-size: 12px; }
+            font-size: 14px; }
           .container .container-img .box-img .datos-prod h6 {
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 400; } }
 
 /* Talle */
