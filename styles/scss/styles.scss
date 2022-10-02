@@ -506,18 +506,18 @@ $breakpoint-tablet: 780px;
 
         .video{
             iframe{
-                width: 110%;
+                width: 100%;
             }
-
+        }
         .instrucciones-talle{
             text-align: center;
             width: 70%;
             font-size: 14px;
-        
+        }
 
         h4{
-            text-align: center;
             font-size: 18px;
+            text-align: center;
         }
     }
 }

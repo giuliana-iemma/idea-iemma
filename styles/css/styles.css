@@ -794,12 +794,15 @@ hr {
     align-content: center;
     align-items: center;
     justify-items: center; }
+    .como-medirte .video iframe {
+      width: 100%; }
     .como-medirte .instrucciones-talle {
       text-align: center;
       width: 70%;
       font-size: 14px; }
     .como-medirte h4 {
-      font-size: 18px; } }
+      font-size: 18px;
+      text-align: center; } }
 
 /* Contacto */
 .contacto {
