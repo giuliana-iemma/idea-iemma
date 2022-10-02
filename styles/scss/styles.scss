@@ -477,6 +477,11 @@ $breakpoint-tablet: 780px;
     /* no lo logro centrar */
     margin-bottom: 80px;
 
+    .video{
+        iframe{
+            width: 100%;
+        }
+    }
     .instrucciones-talle{
         font-size: 18px;
         width: 50%;
